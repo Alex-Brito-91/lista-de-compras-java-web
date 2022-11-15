@@ -9,14 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/servlet")
+@WebServlet("/servletCadastro")
 public class Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("cadastrando item");
 		
-		String nomeItem = request.getParameter("nome");
+		String nomeItem = request.getParameter("produto");
 		
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>item " + nomeItem + " cadastrado com sucesso</body></html>");
