@@ -9,17 +9,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/servletCadastro")
-public class Servlet extends HttpServlet {
+@WebServlet("/novoProduto")
+public class NovoProdutoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("cadastrando item");
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("cadastrando novo produto");
 		
-		String nomeItem = request.getParameter("produto");
+		String nomeProduto = request.getParameter("nome");	
 		
 		PrintWriter out = response.getWriter();
-		out.println("<html><body>item " + nomeItem + " cadastrado com sucesso</body></html>");
+		out.println("<html><body>produto " + nomeProduto + " cadastrado com sucesso!</body></html>");
 	}
 
 }
