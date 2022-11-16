@@ -16,10 +16,20 @@ public class NovoProdutoServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("cadastrando novo produto");
 		
-		String nomeProduto = request.getParameter("nome");	
+//		String nomeProduto = request.getParameter("nome");
+//		double valorProduto = Double.parseDouble(request.getParameter("valor"));
+//		Integer quantProduto = Integer.parseInt(request.getParameter("quant"));
+		
+		Produto produto = new Produto();
+		produto.setNome(request.getParameter("nome"));
+//		produto.setValor(valorProduto);
+//		produto.setQuantidade(quantProduto);
+		
+		Banco banco = new Banco();
+		banco.adiciona(produto);
 		
 		PrintWriter out = response.getWriter();
-		out.println("<html><body>produto " + nomeProduto + " cadastrado com sucesso!</body></html>");
+		out.println("<html><body>produto " + produto.getNome() + " cadastrado com sucesso!</body></html>");
 	}
 
 }
