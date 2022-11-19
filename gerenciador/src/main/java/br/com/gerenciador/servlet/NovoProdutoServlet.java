@@ -1,8 +1,8 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,20 +16,19 @@ public class NovoProdutoServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("cadastrando novo produto");
 		
-//		String nomeProduto = request.getParameter("nome");
-//		double valorProduto = Double.parseDouble(request.getParameter("valor"));
-//		Integer quantProduto = Integer.parseInt(request.getParameter("quant"));
-		
 		Produto produto = new Produto();
 		produto.setNome(request.getParameter("nome"));
-//		produto.setValor(valorProduto);
-//		produto.setQuantidade(quantProduto);
+		produto.setValor(Double.parseDouble(request.getParameter("valor")));
+		produto.setQuantidade(Integer.parseInt(request.getParameter("quant")));
 		
 		Banco banco = new Banco();
 		banco.adiciona(produto);
 		
-		PrintWriter out = response.getWriter();
-		out.println("<html><body>produto " + produto.getNome() + " cadastrado com sucesso!</body></html>");
+		RequestDispatcher rd = request.getRequestDispatcher("/novoProdutoCriado.jsp");
+		request.setAttribute("nome", produto.getNome());
+		request.setAttribute("valor", produto.getValor());
+		request.setAttribute("quantidade", produto.getQuantidade());
+		rd.forward(request, response);
 	}
 
 }

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,15 +19,10 @@ public class ListaProdutosServlet extends HttpServlet {
 		
 		Banco banco = new Banco();
 		List<Produto> produtos = banco.getProdutos();
-		PrintWriter out = response.getWriter();
+		request.setAttribute("produtos", produtos);
 		
-		out.println("<html><body>");
-		out.println("<ul>");
-		for (Produto produto : produtos) {
-			out.println("<li>" + produto.getNome() + "</li>");
-			}
-		out.println("</ul>");
-		out.println("</body></html>");
+		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos.jsp");
+		rd.forward(request, response);
 		
 	}
 
