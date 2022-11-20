@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import= "java.util.List, br.com.gerenciador.servlet.Produto"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>    
 
 <!DOCTYPE html>
 	<html>
@@ -10,12 +11,28 @@
 			<title>Lista de Produtos</title>
 		</head>
 		<body>
-			Lista de Produtos: <br />
-			Data da Lista: <c:>${produto.dataLista}</c:>
-			<ul>
-				<c:forEach items="${produtos}" var="produto">
-					<li>Nome: ${produto.nome} Valor: ${produto.valor} Quantidade: ${produto.quantidade}</li>
-				</c:forEach>
-			</ul>
+			<div align="center"> 
+				<h2>LISTA DE PRODUTOS: <br /></h2>
+				<h3>DATA DA LISTA: <br /></h3>
+						<table border="1">
+							<thead>
+								<tr>
+									<th>NOME</th>
+									<th>VALOR</th>
+									<th>QUANT.</th>
+								</tr>
+							</thead>
+							<tbody>
+								<c:forEach items="${produtos}" var="produto">
+									<tr>
+										<td>${produto.nome}</td>
+										<td>${produto.valor}</td> 
+										<td>${produto.quantidade}</td>
+									</tr>
+								</c:forEach>
+							</tbody>
+						</table>
+					
+			</div>
 		</body>
 	</html>
