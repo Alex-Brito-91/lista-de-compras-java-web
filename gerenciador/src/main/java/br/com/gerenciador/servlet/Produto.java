@@ -1,12 +1,11 @@
 package br.com.gerenciador.servlet;
-import java.util.Date;
 public class Produto {
 	
 	private Integer id;
 	private String nome;
 	private double valor;
 	private Integer quantidade;
-	private Date dataLista = new Date();
+	
 	
 	
 	public Integer getId() {
@@ -32,14 +31,6 @@ public class Produto {
 	}
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
-	}
-	
-	public Date getDataLista() {
-		return dataLista;
-	}
-	
-	public void setDataLista(Date dataLista) {
-		this.dataLista = dataLista;
 	}
 	
 }

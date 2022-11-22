@@ -1,7 +1,9 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -20,6 +22,9 @@ public class ListaProdutosServlet extends HttpServlet {
 		Banco banco = new Banco();
 		List<Produto> produtos = banco.getProdutos();
 		request.setAttribute("produtos", produtos);
+		LocalDate dataLista = LocalDate.now();
+		String dataFormatada = DateTimeFormatter.ofPattern("dd/MM/yyyy").format(dataLista);
+		request.setAttribute("data", dataFormatada);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos.jsp");
 		rd.forward(request, response);
