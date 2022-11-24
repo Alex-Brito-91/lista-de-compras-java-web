@@ -13,7 +13,8 @@
 		<body>
 			<div align="center"> 
 				<h2>LISTA DE PRODUTOS: <br /></h2>
-				<h3>DATA DA LISTA: <c:out value="${data}"/> <br /></h3>
+				
+				<h3>DATA DA LISTA: <fmt:formatDate value="${data}" pattern="dd/MM/yyyy"/>  <br /></h3>
 					
 						<table border="1">
 							<thead>
