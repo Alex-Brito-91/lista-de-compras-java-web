@@ -11,6 +11,15 @@
 			<title>Lista de Produtos</title>
 		</head>
 		<body>
+		
+			<c:if test="${not empty nome}">
+				Produto ${nome} cadastrado com sucesso! <br />
+			</c:if>
+			
+			<c:if test="${empty nome}">
+				Nenhum produto cadastrado! <br />
+			</c:if>
+		
 			<div align="center"> 
 				<h2>LISTA DE PRODUTOS: <br /></h2>
 				

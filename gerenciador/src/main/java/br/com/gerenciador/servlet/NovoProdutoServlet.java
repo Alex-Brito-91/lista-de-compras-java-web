@@ -24,11 +24,13 @@ public class NovoProdutoServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adiciona(produto);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("/novoProdutoCriado.jsp");
-		request.setAttribute("nome", produto.getNome());
-		request.setAttribute("valor", produto.getValor());
-		request.setAttribute("quantidade", produto.getQuantidade());
-		rd.forward(request, response);
+		response.sendRedirect("listaProdutos");
+		
+//		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos");
+//		request.setAttribute("nome", produto.getNome());
+//		request.setAttribute("valor", produto.getValor());
+//		request.setAttribute("quantidade", produto.getQuantidade());
+//		rd.forward(request, response);
 	}
 
 }
