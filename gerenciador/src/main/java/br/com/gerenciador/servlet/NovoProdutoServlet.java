@@ -26,11 +26,6 @@ public class NovoProdutoServlet extends HttpServlet {
 		
 		response.sendRedirect("listaProdutos");
 		
-//		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos");
-//		request.setAttribute("nome", produto.getNome());
-//		request.setAttribute("valor", produto.getValor());
-//		request.setAttribute("quantidade", produto.getQuantidade());
-//		rd.forward(request, response);
 	}
 
 }

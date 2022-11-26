@@ -6,6 +6,7 @@ import java.util.List;
 public class Banco {
 	
 	private static List<Produto> produtos = new ArrayList<>();
+	private static Integer chaveSequencial = 1;
 
 	public void adiciona(Produto produto) {
 		Banco.produtos.add(produto);

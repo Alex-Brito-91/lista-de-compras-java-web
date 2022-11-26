@@ -31,6 +31,7 @@
 									<th>NOME</th>
 									<th>VALOR</th>
 									<th>QUANT.</th>
+									<th>&nbsp;</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -39,6 +40,7 @@
 										<td>${produto.nome}</td>
 										<td>${produto.valor}</td> 
 										<td>${produto.quantidade}</td>
+										<td><a href="/gerenciador/removeEmpresa">remover</a></td>
 									</tr>
 								</c:forEach>
 							</tbody>
