@@ -24,6 +24,10 @@ public class NovoProdutoServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adiciona(produto);
 		
+		request.setAttribute("nome", produto.getNome());
+		request.setAttribute("valor", produto.getValor());
+		request.setAttribute("quantidade", produto.getQuantidade());
+		
 		response.sendRedirect("listaProdutos");
 		
 	}

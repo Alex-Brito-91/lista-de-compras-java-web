@@ -13,6 +13,13 @@ public class RemoveProdutoServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		String paramId = request.getParameter("id");
+		Integer id = Integer.valueOf(paramId);
+		
+		Banco banco = new Banco();
+		banco.removeProduto(id);
+		
+		response.sendRedirect("listaProdutos");
 	}
 
 }

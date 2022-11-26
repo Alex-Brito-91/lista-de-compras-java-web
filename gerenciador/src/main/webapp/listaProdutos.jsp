@@ -13,15 +13,11 @@
 		<body>
 		
 			<c:if test="${not empty nome}">
-				Produto ${nome} cadastrado com sucesso! <br />
-			</c:if>
-			
-			<c:if test="${empty nome}">
-				Nenhum produto cadastrado! <br />
+				Produto ${nome} cadastrado com sucesso!
 			</c:if>
 		
 			<div align="center"> 
-				<h2>LISTA DE PRODUTOS: <br /></h2>
+				<h2>LISTA DE PRODUTOS<br /></h2>
 				
 				<h3>DATA DA LISTA: <fmt:formatDate value="${data}" pattern="dd/MM/yyyy"/>  <br /></h3>
 					
@@ -40,12 +36,11 @@
 										<td>${produto.nome}</td>
 										<td>${produto.valor}</td> 
 										<td>${produto.quantidade}</td>
-										<td><a href="/gerenciador/removeEmpresa">remover</a></td>
+										<td><a href="/gerenciador/removeProduto?id=${produto.id}">remover</a></td>
 									</tr>
 								</c:forEach>
 							</tbody>
 						</table>
-					
 			</div>
 		</body>
 	</html>
