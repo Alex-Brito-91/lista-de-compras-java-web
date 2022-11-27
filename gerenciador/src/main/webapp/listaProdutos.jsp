@@ -11,16 +11,14 @@
 			<title>Lista de Produtos</title>
 		</head>
 		<body>
-		
 			<c:if test="${not empty nome}">
 				Produto ${nome} cadastrado com sucesso!
-			</c:if>
-		
+			</c:if><br>
 			<div align="center"> 
 				<h2>LISTA DE PRODUTOS<br /></h2>
 				
 				<h3>DATA DA LISTA: <fmt:formatDate value="${data}" pattern="dd/MM/yyyy"/>  <br /></h3>
-					
+				
 						<table border="1">
 							<thead>
 								<tr>
@@ -41,6 +39,7 @@
 								</c:forEach>
 							</tbody>
 						</table>
+						<a href="/gerenciador/formNovoProduto.jsp">voltar ao cadastro</a>
 			</div>
 		</body>
 	</html>

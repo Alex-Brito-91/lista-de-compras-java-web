@@ -16,6 +16,7 @@
 					Quantidade: <input type="text" name="quant"/><br>
 					<input type="submit"/><br>
 				</form>
+					<a href="/gerenciador/listaProdutos">exibir lista</a>
 			</div>
 		</body>
 	</html>
