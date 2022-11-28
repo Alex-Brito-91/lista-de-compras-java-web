@@ -19,15 +19,15 @@ public class Banco {
 	}
 
 	public void removeProduto(Integer id) {
+		
 		Iterator<Produto> it = produtos.iterator();
+		
 		while (it.hasNext()) {
 			Produto p = it.next();
-			if(p.getId() == id) {
-				produtos.remove(p);
+			
+			if (p.getId() == id) {
+				it.remove();
 			}
 		}
-		
 	}
-	
-	
 }
