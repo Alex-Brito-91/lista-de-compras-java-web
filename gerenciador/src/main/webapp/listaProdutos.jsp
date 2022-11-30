@@ -25,15 +25,15 @@
 									<th>NOME</th>
 									<th>VALOR</th>
 									<th>QUANT.</th>
-									<th>&nbsp;</th>
 								</tr>
 							</thead>
 							<tbody>
 								<c:forEach items="${produtos}" var="produto">
 									<tr>
 										<td>${produto.nome}</td>
-										<td>${produto.valor}</td> 
-										<td>${produto.quantidade}</td>
+										<td align="center">${produto.valor}</td> 
+										<td align="center">${produto.quantidade}</td>
+										<td><a href="/gerenciador/mostraProduto?id=${produto.id}">editar</a></td>
 										<td><a href="/gerenciador/removeProduto?id=${produto.id}">remover</a></td>
 									</tr>
 								</c:forEach>

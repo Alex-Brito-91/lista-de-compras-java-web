@@ -30,4 +30,13 @@ public class Banco {
 			}
 		}
 	}
+
+	public Produto buscaIdProduto(Integer id) {
+		for (Produto produto : produtos) {
+			if(produto.getId() == id) {
+				return produto;
+			}
+		} return null;
+		
+	}
 }
