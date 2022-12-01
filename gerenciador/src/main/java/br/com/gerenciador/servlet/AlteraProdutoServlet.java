@@ -15,19 +15,15 @@ public class AlteraProdutoServlet extends HttpServlet {
 		
 		System.out.println("alterando produto");
 		
-		String nomeProduto = request.getParameter("nome");
-		double valorProduto = Double.parseDouble(request.getParameter("valor"));
-		Integer quantProduto = Integer.parseInt(request.getParameter("quant"));
 		String paramId = request.getParameter("id");
 		Integer id = Integer.valueOf(paramId);
 		
-		System.out.println(id);
-		
 		Banco banco = new Banco();
 		Produto produto = banco.buscaIdProduto(id);
-		produto.setNome(nomeProduto);
-		produto.setValor(valorProduto);
-		produto.setQuantidade(quantProduto);
+	
+		produto.setNome(request.getParameter("nome"));
+		produto.setValor(Double.parseDouble(request.getParameter("valor")));
+		produto.setQuantidade(Integer.parseInt(request.getParameter("quant")));
 		
 		response.sendRedirect("listaProdutos");
 		
