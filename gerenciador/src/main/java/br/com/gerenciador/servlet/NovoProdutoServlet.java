@@ -18,6 +18,7 @@ public class NovoProdutoServlet extends HttpServlet {
 		produto.setNome(request.getParameter("nome"));
 		produto.setValor(Double.parseDouble(request.getParameter("valor")));
 		produto.setQuantidade(Integer.parseInt(request.getParameter("quant")));
+		produto.setValorTotal(Double.parseDouble(request.getParameter("valor")) * Integer.parseInt(request.getParameter("quant")));
 		
 		Banco banco = new Banco();
 		banco.adiciona(produto);
@@ -25,10 +26,9 @@ public class NovoProdutoServlet extends HttpServlet {
 		request.setAttribute("nome", produto.getNome());
 		request.setAttribute("valor", produto.getValor());
 		request.setAttribute("quantidade", produto.getQuantidade());
+		request.setAttribute("total", produto.getValorTotal());
 		
 		response.sendRedirect("listaProdutos");
-//		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos");
-//		rd.forward(request, response);
 		
 	}
 

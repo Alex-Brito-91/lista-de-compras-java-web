@@ -16,7 +16,7 @@
 					Quantidade: <input type="text" name="quant" value="${produto.quantidade}"/><br>
 					<input type="hidden" name="id" value="${produto.id}"><br>
 					<input type="submit" value="alterar"/><br>
-				</form>
+				</form><br>
 					<a href="/gerenciador/listaProdutos">exibir lista</a>
 			</div>
 		</body>

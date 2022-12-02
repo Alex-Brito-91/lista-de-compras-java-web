@@ -3,10 +3,10 @@ public class Produto {
 	
 	private Integer id;
 	private String nome;
-	private double valor;
+	private double valorUnitario;
 	private Integer quantidade;
-	
-	
+	private double valorTotal;
+	private double TotalDaCompra;
 	
 	public Integer getId() {
 		return id;
@@ -21,16 +21,32 @@ public class Produto {
 		this.nome = nome;
 	}
 	public double getValor() {
-		return valor;
+		return valorUnitario;
 	}
 	public void setValor(double valor) {
-		this.valor = valor;
+		this.valorUnitario = valor;
 	}
 	public Integer getQuantidade() {
 		return quantidade;
 	}
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
+	}
+	
+	public double getValorTotal() {
+		return valorTotal;
+	}
+	
+	public void setValorTotal(double valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+	
+	public void setTotalDaCompra(double totalDaCompra) {
+		TotalDaCompra = totalDaCompra;
+	}
+	
+	public double getTotalDaCompra() {
+		return TotalDaCompra;
 	}
 	
 }

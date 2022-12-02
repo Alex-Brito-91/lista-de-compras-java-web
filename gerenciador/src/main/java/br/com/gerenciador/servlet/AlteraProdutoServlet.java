@@ -24,6 +24,7 @@ public class AlteraProdutoServlet extends HttpServlet {
 		produto.setNome(request.getParameter("nome"));
 		produto.setValor(Double.parseDouble(request.getParameter("valor")));
 		produto.setQuantidade(Integer.parseInt(request.getParameter("quant")));
+		produto.setValorTotal(Double.parseDouble(request.getParameter("valor")) * Integer.parseInt(request.getParameter("quant")));
 		
 		response.sendRedirect("listaProdutos");
 		

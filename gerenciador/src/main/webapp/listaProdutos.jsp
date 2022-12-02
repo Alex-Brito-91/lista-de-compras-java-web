@@ -23,8 +23,9 @@
 							<thead>
 								<tr>
 									<th>NOME</th>
-									<th>VALOR</th>
+									<th>VALOR UN</th>
 									<th>QUANT.</th>
+									<th>TOTAL</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -33,12 +34,18 @@
 										<td>${produto.nome}</td>
 										<td align="center">${produto.valor}</td> 
 										<td align="center">${produto.quantidade}</td>
+										<td align="center">${produto.valorTotal}</td>
 										<td><a href="/gerenciador/mostraProduto?id=${produto.id}">editar</a></td>
 										<td><a href="/gerenciador/removeProduto?id=${produto.id}">remover</a></td>
 									</tr>
 								</c:forEach>
 							</tbody>
-						</table>
+							<tfoot>
+								<tr>
+									<td>TOTAL DA COMPRA: </td>
+								</tr>
+							</tfoot>
+						</table><br>
 						<a href="/gerenciador/formNovoProduto.jsp">voltar ao cadastro</a>
 			</div>
 		</body>

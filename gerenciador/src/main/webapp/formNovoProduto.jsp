@@ -14,8 +14,8 @@
 					Nome: <input type="text" name="nome"/><br>
 					Valor: <input type="text" name="valor"/><br>
 					Quantidade: <input type="text" name="quant"/><br>
-					<input type="submit" value="cadastrar"/><br>
-				</form>
+					<br><input type="submit" value="cadastrar"/>
+				</form><br>
 					<a href="/gerenciador/listaProdutos">exibir lista</a>
 			</div>
 		</body>
