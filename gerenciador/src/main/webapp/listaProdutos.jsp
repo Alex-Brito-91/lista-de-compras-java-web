@@ -40,13 +40,9 @@
 									</tr>
 								</c:forEach>
 							</tbody>
-							<tfoot>
-								<tr>
-									<td>TOTAL DA COMPRA: </td>
-								</tr>
-							</tfoot>
 						</table><br>
-						<a href="/gerenciador/formNovoProduto.jsp">voltar ao cadastro</a>
+						TOTAL DA COMPRA: ${totalCompra}<br>
+						<br><a href="/gerenciador/formNovoProduto.jsp">voltar ao cadastro</a>
 			</div>
 		</body>
 	</html>

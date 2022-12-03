@@ -19,7 +19,16 @@ public class ListaProdutosServlet extends HttpServlet {
 		
 		Banco banco = new Banco();
 		List<Produto> produtos = banco.getProdutos();
+		
+		double totalDaCompra = 0;
+		
+		for (Produto produto : produtos) {
+			totalDaCompra += produto.getValorTotal();
+		}
+		
 		request.setAttribute("produtos", produtos);
+		request.setAttribute("totalCompra", totalDaCompra);
+		
 		Date dataLista = new Date();
 		request.setAttribute("data", dataLista);
 		
