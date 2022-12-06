@@ -5,44 +5,48 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>    
 
 <!DOCTYPE html>
-	<html>
+	<html lang="pt-br">
 		<head>
 			<meta charset="UTF-8">
 			<title>Lista de Produtos</title>
+			<link rel="stylesheet" href="style.css">
 		</head>
 		<body>
 			<c:if test="${not empty nome}">
 				Produto ${nome} cadastrado com sucesso!
 			</c:if><br>
-			<div align="center"> 
-				<h2>LISTA DE PRODUTOS<br /></h2>
+			<div> 
+				<h1>LISTA DE PRODUTOS<br /></h1>
 				
-				<h3>DATA DA LISTA: <fmt:formatDate value="${data}" pattern="dd/MM/yyyy"/>  <br /></h3>
+				<h2>Lista Criada em: <em><fmt:formatDate value="${data}" pattern="dd/MM/yyyy"/></em></h2>
 				
-						<table border="1">
+						<table>
 							<thead>
 								<tr>
 									<th>NOME</th>
 									<th>VALOR UN</th>
 									<th>QUANT.</th>
 									<th>TOTAL</th>
+									<th>&nbsp</th>
 								</tr>
 							</thead>
 							<tbody>
 								<c:forEach items="${produtos}" var="produto">
 									<tr>
 										<td>${produto.nome}</td>
-										<td align="center">${produto.valor}</td> 
-										<td align="center">${produto.quantidade}</td>
-										<td align="center">${produto.valorTotal}</td>
-										<td><a href="/gerenciador/mostraProduto?id=${produto.id}">editar</a></td>
-										<td><a href="/gerenciador/removeProduto?id=${produto.id}">remover</a></td>
+										<td>${produto.valor}</td> 
+										<td>${produto.quantidade}</td>
+										<td>${produto.valorTotal}</td>
+										<td>
+											<a href="/gerenciador/mostraProduto?id=${produto.id}">alterar</a>  
+											<a href="/gerenciador/removeProduto?id=${produto.id}">excluir</a>
+										</td>
 									</tr>
 								</c:forEach>
 							</tbody>
-						</table><br>
-						TOTAL DA COMPRA: ${totalCompra}<br>
-						<br><a href="/gerenciador/formNovoProduto.jsp">voltar ao cadastro</a>
+						</table>
+						<h3>Total da compra: <em>${totalCompra}</em></h3> 
+						<a href="/gerenciador/formNovoProduto.jsp" style="">voltar ao cadastro</a>
 			</div>
 		</body>
 	</html>
