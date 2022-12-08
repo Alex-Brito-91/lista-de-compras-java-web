@@ -1,6 +1,7 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -20,10 +21,10 @@ public class ListaProdutosServlet extends HttpServlet {
 		Banco banco = new Banco();
 		List<Produto> produtos = banco.getProdutos();
 		
-		double totalDaCompra = 0;
+		BigDecimal totalDaCompra = new BigDecimal(0);
 		
 		for (Produto produto : produtos) {
-			totalDaCompra += produto.getValorTotal();
+			totalDaCompra = totalDaCompra.add(produto.getValorTotal());
 		}
 		
 		request.setAttribute("produtos", produtos);

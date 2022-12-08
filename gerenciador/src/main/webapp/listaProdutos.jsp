@@ -27,14 +27,14 @@
 									<th>VALOR UN</th>
 									<th>QUANT.</th>
 									<th>TOTAL</th>
-									<th>&nbsp</th>
+									<th>&nbsp;</th>
 								</tr>
 							</thead>
 							<tbody>
 								<c:forEach items="${produtos}" var="produto">
 									<tr>
 										<td>${produto.nome}</td>
-										<td>${produto.valor}</td> 
+										<td>${produto.valorUnitario}</td> 
 										<td>${produto.quantidade}</td>
 										<td>${produto.valorTotal}</td>
 										<td>

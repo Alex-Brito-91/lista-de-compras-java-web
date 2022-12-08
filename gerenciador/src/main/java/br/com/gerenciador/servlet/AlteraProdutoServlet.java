@@ -1,6 +1,8 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
+import java.math.BigDecimal;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,19 +17,23 @@ public class AlteraProdutoServlet extends HttpServlet {
 		
 		System.out.println("alterando produto");
 		
+		String nome = request.getParameter("nome");
+		BigDecimal valorUnitario = new BigDecimal(request.getParameter("valor"));
+		Integer quantidade = Integer.parseInt(request.getParameter("quant"));
+		BigDecimal valorTotal = valorUnitario.multiply(BigDecimal.valueOf(quantidade));
+		
 		String paramId = request.getParameter("id");
 		Integer id = Integer.valueOf(paramId);
 		
 		Banco banco = new Banco();
 		Produto produto = banco.buscaIdProduto(id);
+		
+		produto.setNome(nome);
+		produto.setValorUnitario(valorUnitario);
+		produto.setQuantidade(quantidade);
+		produto.setValorTotal(valorTotal);
 	
-		produto.setNome(request.getParameter("nome"));
-		produto.setValor(Double.parseDouble(request.getParameter("valor")));
-		produto.setQuantidade(Integer.parseInt(request.getParameter("quant")));
-		produto.setValorTotal(Double.parseDouble(request.getParameter("valor")) * Integer.parseInt(request.getParameter("quant")));
-		
 		response.sendRedirect("listaProdutos");
-		
 		
 	}
 
