@@ -9,7 +9,7 @@ public class Produto {
 	private BigDecimal valorUnitario;
 	private Integer quantidade;
 	private BigDecimal valorTotal;
-
+	
 	public Integer getId() {
 		return id;
 	}

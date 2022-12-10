@@ -6,6 +6,7 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>Cadastro de Produto</title>
+			<link rel="stylesheet" href="style_3.css">
 		</head>
 		
 		<body>
@@ -17,7 +18,6 @@
 					<input type="hidden" name="id" value="${produto.id}"><br>
 					<input type="submit" value="alterar"/><br>
 				</form><br>
-					<a href="/gerenciador/listaProdutos">exibir lista</a>
 			</div>
 		</body>
 	</html>

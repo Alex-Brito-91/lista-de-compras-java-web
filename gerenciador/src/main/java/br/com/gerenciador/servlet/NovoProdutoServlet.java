@@ -1,6 +1,7 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
+
 import java.math.BigDecimal;
 
 import javax.servlet.ServletException;
@@ -14,6 +15,7 @@ public class NovoProdutoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		System.out.println("cadastrando novo produto");
 		
 		String nome = request.getParameter("nome");

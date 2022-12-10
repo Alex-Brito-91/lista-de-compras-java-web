@@ -1,7 +1,9 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
+
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -27,8 +29,12 @@ public class ListaProdutosServlet extends HttpServlet {
 			totalDaCompra = totalDaCompra.add(produto.getValorTotal());
 		}
 		
+		DecimalFormat formato = new DecimalFormat("#,###,##0.00");
+		String totalFormatado = formato.format(totalDaCompra);
+		
 		request.setAttribute("produtos", produtos);
-		request.setAttribute("totalCompra", totalDaCompra);
+		request.setAttribute("totalCompra", totalFormatado);
+		
 		
 		Date dataLista = new Date();
 		request.setAttribute("data", dataLista);

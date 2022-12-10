@@ -6,17 +6,19 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>Cadastro de Produto</title>
+			<link rel="stylesheet" href="style_2.css">
 		</head>
 		
 		<body>
-			<div align="center">
+			<div>
+				<br><h1>Cadastrar novo Produto</h1>
 				<form action="${linkServletNovoProduto}" method="post"><br>
-					Nome: <input type="text" name="nome"/><br>
-					Valor: <input type="text" name="valor"/><br>
-					Quantidade: <input type="text" name="quant"/><br>
+					Nome: <input type="text" name="nome"/><br/>
+					<br>Valor: <input type="text" name="valor"/><br/>
+					<br>Quantidade: <input type="text" name="quant"/><br/>
 					<br><input type="submit" value="cadastrar"/>
 				</form><br>
-					<a href="/gerenciador/listaProdutos">exibir lista</a>
+					<a href="/gerenciador/listaProdutos"><button>exibir lista</button></a>
 			</div>
 		</body>
 	</html>

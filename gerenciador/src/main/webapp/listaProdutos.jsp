@@ -9,7 +9,7 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>Lista de Produtos</title>
-			<link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="style_lista.css">
 		</head>
 		<body>
 			<c:if test="${not empty nome}">
@@ -34,9 +34,9 @@
 								<c:forEach items="${produtos}" var="produto">
 									<tr>
 										<td>${produto.nome}</td>
-										<td>${produto.valorUnitario}</td> 
+										<td>R$${produto.valorUnitario}</td> 
 										<td>${produto.quantidade}</td>
-										<td>${produto.valorTotal}</td>
+										<td>R$${produto.valorTotal}</td>
 										<td>
 											<a href="/gerenciador/mostraProduto?id=${produto.id}">alterar</a>  
 											<a href="/gerenciador/removeProduto?id=${produto.id}">excluir</a>
@@ -45,8 +45,9 @@
 								</c:forEach>
 							</tbody>
 						</table>
-						<h3>Total da compra: <em>${totalCompra}</em></h3> 
-						<a href="/gerenciador/formNovoProduto.jsp" style="">voltar ao cadastro</a>
+						<h3>Total da compra: <em>R$${totalCompra}</em></h3> 
+						<a href="/gerenciador/formNovoProduto.jsp"> <button>voltar ao cadastro</button></a><br/>
+						<br/>
 			</div>
 		</body>
 	</html>
