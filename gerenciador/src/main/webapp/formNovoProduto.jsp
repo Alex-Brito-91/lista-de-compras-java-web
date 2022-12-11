@@ -6,12 +6,12 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>Cadastro de Produto</title>
-			<link rel="stylesheet" href="style_2.css">
+			<link rel="stylesheet" href="style_novo.css">
 		</head>
 		
 		<body>
 			<div>
-				<br><h1>Cadastrar novo Produto</h1>
+				<br><h1>Cadastrar Produtos</h1>
 				<form action="${linkServletNovoProduto}" method="post"><br>
 					Nome: <input type="text" name="nome"/><br/>
 					<br>Valor: <input type="text" name="valor"/><br/>

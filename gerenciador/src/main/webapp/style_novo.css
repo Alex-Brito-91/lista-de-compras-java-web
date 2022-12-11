@@ -24,7 +24,7 @@ input {
 	height: 15px;
 	background-color: #f2f2f2;
   	padding: 3px;
-  	border: 1px solid #23a291;
+  	border: 1px solid #15969d;
   	color: #333;
 }
 
@@ -33,7 +33,7 @@ input[type=submit] {
 	border-radius: 10px;
   	border: 1px solid #333;
   	background-color: #15969d;
-  	color: #fff;
+  	color: #000000;
   	height: 30px;
   	width: 100px;
 }
@@ -48,11 +48,12 @@ button {
   	width: 100px;
 }
 
-button:hover:nth-child {
-	background-color: #ffe151;
-	color: #000000;
+button:hover {
+	background-color: #ffa408;
+	color: #ffffff;
 }
 
-body {
-	text-align: center;
+input:hover {
+	background-color: #006556;
+	color: #ffffff;
 }

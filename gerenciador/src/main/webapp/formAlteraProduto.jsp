@@ -6,7 +6,7 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>Cadastro de Produto</title>
-			<link rel="stylesheet" href="style_3.css">
+			<link rel="stylesheet" href="style_altera.css">
 		</head>
 		
 		<body>
