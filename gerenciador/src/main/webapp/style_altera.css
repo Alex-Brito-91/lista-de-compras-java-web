@@ -2,9 +2,12 @@
 
 div {
 	text-align: center;
-	border-radius: 40px;
-	width: 150px;
-	height: 210px;
+	border-radius: 30px;
+	border: 1px solid #15969d;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	width: 250px;
+	height: 200px;
 	background-color: #dcfecc;
 }
 
@@ -15,45 +18,39 @@ h1 {
 
 form {
 	font-family: FreeMono, monospace;
+	text-align: right;
 }
 
 input {
 	text-align: center;
 	font-family: FreeMono, monospace;
 	border-radius: 5px;
+  	border: 1px solid #23a291;
   	width: 120px;
 	height: 15px;
 	background-color: #f2f2f2;
   	padding: 3px;
-  	border: 1px solid #23a291;
   	color: #333;
 }
 
 input[type=submit] {
+	text-align: center;
 	font-size: 17px;
 	border-radius: 10px;
-  	border: 1px solid #333;
+  	border: 1px solid #2F4F4F;
   	background-color: #15969d;
   	color: #fff;
   	height: 30px;
   	width: 100px;
 }
 
-button {
-	font-family: FreeMono, monospace;
-	font-size: 17px;
-	border-radius: 10px;
-  	border: 1px solid #333;
-  	background-color: #fffaa7;
-  	height: 40px;
-  	width: 100px;
+input[type=submit]:hover {
+	background-color: #006556;
+	color: #ffffff;
 }
 
-button:hover:nth-child {
-	background-color: #ffe151;
-	color: #000000;
-}
-
-body {
+section {
 	text-align: center;
 }
+
+

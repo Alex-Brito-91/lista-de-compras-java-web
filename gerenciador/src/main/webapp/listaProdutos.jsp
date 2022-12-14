@@ -25,7 +25,7 @@
 								<tr>
 									<th>NOME</th>
 									<th>VALOR UN</th>
-									<th>QUANT.</th>
+									<th>QT</th>
 									<th>TOTAL</th>
 									<th>&nbsp;</th>
 								</tr>
@@ -46,8 +46,7 @@
 							</tbody>
 						</table>
 						<h3>Total da compra: <em>R$${totalCompra}</em></h3> 
-						<a href="/gerenciador/formNovoProduto.jsp"> <button>voltar ao cadastro</button></a><br/>
-						<br/>
+						<a href="/gerenciador/formNovoProduto.jsp"> <button>voltar ao cadastro</button></a>
 			</div>
 		</body>
 	</html>
