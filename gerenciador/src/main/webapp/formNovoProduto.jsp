@@ -16,8 +16,10 @@
 					Nome: <input type="text" name="nome"/><br/>
 					<br>Valor: <input type="text" name="valor"/><br/>
 					<br>Quantidade: <input type="text" name="quant"/><br/>
-					<br><input type="submit" value="cadastrar"/>
-				</form><br>
+						<section>
+							<input type="submit" value="cadastrar"/>
+						</section>
+				</form>
 					<a href="/gerenciador/listaProdutos"><button>exibir lista</button></a>
 			</div>
 		</body>

@@ -11,7 +11,7 @@
 		
 		<body>
 			<div>
-				<h1>Alterar Produto:</h1>
+				<h1>Alterar Produto</h1>
 				<form action="${linkServletNovoProduto}" method="post"><br>
 					Nome: <input type="text" name="nome" value="${produto.nome}"/><br>
 					Valor: <input type="text" name="valor" value="${produto.valorUnitario}"/><br>
