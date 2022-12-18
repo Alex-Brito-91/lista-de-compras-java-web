@@ -2,7 +2,7 @@
 <c:url value="/novoProduto" var="linkServletNovoProduto"/>
 
 <!DOCTYPE html>
-	<html>
+	<html lang="pt-br">
 		<head>
 			<meta charset="UTF-8">
 			<title>Cadastro de Produto</title>
@@ -21,7 +21,7 @@
 						</section>
 				</form>
 					<a href="/gerenciador/listaProdutos"><button>exibir lista</button></a><br/>
-					<br><h2>Total da compra: <em>R$${totalCompra}</em></h2>
+					<br><h2>Total da compra: </h2>
 			</div>
 		</body>
 	</html>
