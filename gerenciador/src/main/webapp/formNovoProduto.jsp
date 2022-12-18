@@ -20,7 +20,8 @@
 							<input type="submit" value="cadastrar"/>
 						</section>
 				</form>
-					<a href="/gerenciador/listaProdutos"><button>exibir lista</button></a>
+					<a href="/gerenciador/listaProdutos"><button>exibir lista</button></a><br/>
+					<br><h2>Total da compra: <em>R$${totalCompra}</em></h2>
 			</div>
 		</body>
 	</html>
