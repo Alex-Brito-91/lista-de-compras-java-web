@@ -11,6 +11,14 @@
 		
 		<body>
 			<div>
+				<br><h1>Saldo Alimentação</h1>
+				<form action="${linkServletNovoProduto}" method="post"><br>
+					Alimentação 1: <input type="text" name="valor1"/><br/>
+					<br>Alimentação 2: <input type="text" name="valor2"/><br/>
+					<br><input type="submit" value="cadastrar"/>
+				</form>
+			</div>
+			<div>
 				<br><h1>Cadastrar Produtos</h1>
 				<form action="${linkServletNovoProduto}" method="post"><br>
 					Nome: <input type="text" name="nome"/><br/>
@@ -21,7 +29,6 @@
 						</section>
 				</form>
 					<a href="/gerenciador/listaProdutos"><button>exibir lista</button></a><br/>
-					<br><h2>Total da compra: </h2>
 			</div>
 		</body>
 	</html>

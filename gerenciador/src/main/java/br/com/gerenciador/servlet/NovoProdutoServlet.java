@@ -23,6 +23,12 @@ public class NovoProdutoServlet extends HttpServlet {
 		Integer quantidade = Integer.parseInt(request.getParameter("quant"));
 		BigDecimal valorTotal = valorUnitario.multiply(BigDecimal.valueOf(quantidade));
 		
+		BigDecimal alimentacao1 = new BigDecimal(request.getParameter("valor1"));
+		BigDecimal alimentacao2 = new BigDecimal(request.getParameter("valor2"));
+		alimentacao1.add(alimentacao2);
+		BigDecimal totalAlimentacao = new BigDecimal(0);
+		totalAlimentacao.add(alimentacao1);
+		
 		Produto produto = new Produto();
 		produto.setNome(nome);
 		produto.setValorUnitario(valorUnitario);
