@@ -29,8 +29,7 @@ public class ListaProdutosServlet extends HttpServlet {
 			totalDaCompra = totalDaCompra.add(produto.getValorTotal());
 		}
 		
-		DecimalFormat formato = new DecimalFormat("#,###,##0.00");
-		String totalFormatado = formato.format(totalDaCompra);
+		String totalFormatado = DecimalFormat.getCurrencyInstance().format(totalDaCompra);
 		
 		request.setAttribute("produtos", produtos);
 		request.setAttribute("totalCompra", totalFormatado);

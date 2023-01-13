@@ -12,9 +12,6 @@
 			<link rel="stylesheet" href="style_lista.css">
 		</head>
 		<body>
-			<c:if test="${not empty nome}">
-				Produto ${nome} cadastrado com sucesso!
-			</c:if><br>
 			<div> 
 				<h1>LISTA DE PRODUTOS<br /></h1>
 				
@@ -45,7 +42,7 @@
 								</c:forEach>
 							</tbody>
 						</table>
-						<h3>Total da compra: <em>R$${totalCompra}</em></h3> 
+						<h3>Total da compra: <em>${totalCompra}</em></h3> 
 						<a href="/gerenciador/formNovoProduto.jsp"> <button>voltar ao cadastro</button></a>
 			</div>
 		</body>
