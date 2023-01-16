@@ -1,6 +1,7 @@
 package br.com.gerenciador.servlet;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 
 public class Produto {
 
@@ -9,7 +10,7 @@ public class Produto {
 	private BigDecimal valorUnitario;
 	private Integer quantidade;
 	private BigDecimal valorTotal;
-	
+
 	public Integer getId() {
 		return id;
 	}
@@ -37,17 +38,22 @@ public class Produto {
 	public Integer getQuantidade() {
 		return quantidade;
 	}
-	
+
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
 	}
-	
+
 	public BigDecimal getValorTotal() {
 		return valorTotal;
 	}
 
 	public void setValorTotal(BigDecimal valor) {
 		this.valorTotal = valor;
+	}
+
+	@Override
+	public String toString() {
+		return DecimalFormat.getCurrencyInstance().format(valorTotal);
 	}
 
 }
