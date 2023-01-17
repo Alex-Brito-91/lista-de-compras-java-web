@@ -50,10 +50,15 @@ public class Produto {
 	public void setValorTotal(BigDecimal valor) {
 		this.valorTotal = valor;
 	}
-
-	@Override
-	public String toString() {
-		return DecimalFormat.getCurrencyInstance().format(valorTotal);
+	
+	public String getValorUnString() {
+		String valorUn = DecimalFormat.getCurrencyInstance().format(this.valorUnitario);
+		return valorUn;
+	}
+	
+	public String getValorTotalString() {
+		String valorTotalString = DecimalFormat.getCurrencyInstance().format(this.valorTotal);
+		return valorTotalString;
 	}
 
 }

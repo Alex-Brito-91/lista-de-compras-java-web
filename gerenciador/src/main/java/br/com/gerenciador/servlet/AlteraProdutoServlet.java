@@ -18,7 +18,7 @@ public class AlteraProdutoServlet extends HttpServlet {
 		System.out.println("alterando produto");
 		
 		String nome = request.getParameter("nome");
-		BigDecimal valorUnitario = new BigDecimal(request.getParameter("valor"));
+		BigDecimal valorUnitario = new BigDecimal(request.getParameter("valor").replaceAll(",", "."));
 		Integer quantidade = Integer.parseInt(request.getParameter("quant"));
 		BigDecimal valorTotal = valorUnitario.multiply(BigDecimal.valueOf(quantidade));
 		

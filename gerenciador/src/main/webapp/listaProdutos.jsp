@@ -31,9 +31,9 @@
 								<c:forEach items="${produtos}" var="produto">
 									<tr>
 										<td>${produto.nome}</td>
-										<td>${produto.valorUnitario}</td> 
+										<td>${produto.getValorUnString()}</td> 
 										<td>${produto.quantidade}</td>
-										<td>${produto.toString()}</td>
+										<td>${produto.getValorTotalString()}</td>
 										<td>
 											<a href="/gerenciador/mostraProduto?id=${produto.id}">alterar</a>  
 											<a href="/gerenciador/removeProduto?id=${produto.id}">excluir</a>
