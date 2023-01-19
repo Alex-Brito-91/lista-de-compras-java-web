@@ -2,7 +2,7 @@
 <c:url value="/novoProduto" var="linkServletNovoProduto"/>
 
 <!DOCTYPE html>
-	<html lang="pt-br">
+	<html lang="pt-BR">
 		<head>
 			<meta charset="UTF-8">
 			<title>Cadastro de Produto</title>
