@@ -12,9 +12,10 @@
 	<body>
 		<header class="cabecalho">
 			<img class="cabecalho-imagem"src="shopping-basket.png" alt="logo do carrinho">
-			<nav class="cabecalho-menu-item">
-				<a class="cabecalho-menu-item">Cadastro de Produtos</a>
-				<a class="cabecalho-menu-item">Lista de Produtos</a>
+			<nav class="cabecalho-menu">
+				<a class="cabecalho-menu-item">Seu Saldo</a>
+				<a class="cabecalho-menu-item" href="formNovoProduto.jsp">Cadastro de Produtos</a>
+				<a class="cabecalho-menu-item" href="listaProdutos.jsp">Lista de Produtos</a>
 			</nav>
 		</header>
 		
@@ -37,7 +38,7 @@
 		
 		</main>
 		
-		<footer>
+		<footer class="rodape">
 		
 		</footer>
 	</body>
