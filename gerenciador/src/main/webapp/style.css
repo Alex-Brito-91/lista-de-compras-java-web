@@ -33,7 +33,6 @@ body {
 
 .cabecalho-menu-item {
 	font-family: 'Sofia Sans Extra Condensed', sans-serif;
-	color: #45B606;
 	font-weight: 400;
 	font-size: 25px;
 }
@@ -60,14 +59,12 @@ body {
 	font-family: 'Sofia Sans Extra Condensed', sans-serif;
 	font-weight: 500;
 	font-size: 64px;
-	color: #45B606;
 }
 
 .conteudo-principal-escrito-subtitulo {
 	font-family: 'Sofia Sans Extra Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 32px;
-	color: #45B606;
 }
 
 .conteudo-principal-escrito-botao {
@@ -104,14 +101,12 @@ body {
 	font-family: 'Sofia Sans Extra Condensed', sans-serif;
 	font-weight: 500;
 	font-size: 48px;
-	color: #45B606;
 }
 
 .conteudo-secundario-paragrafo {
 	font-family: 'Sofia Sans Extra Condensed', sans-serif;
 	font-weight: 500;
 	font-size: 25px;
-	color: #45B606;
 }
 
 .rodape {
