@@ -1,78 +1,107 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed&family=Sofia+Sans+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@200;400&family=Sofia+Sans+Semi+Condensed&display=swap');
 
-div {
-	margin: auto;
-	text-align: center;
-	border-radius: 30px;
-	border: 1px solid #15969d;
-	padding: 20px 20px 20px 20px;
-	width: 300px;
-	height: 450px;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	font-size: 100%;
 	background-color: #dcfecc;
 }
 
-h1 {
+.cabecalho {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 25px;
+}
+
+.cabecalho-imagem {
+	height: 72px;
+}
+
+.cabecalho-menu {
+	display: flex;
+	gap: 32px;
+}
+
+.cabecalho-menu-item {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	color: #000000;
+}
+
+.conteudo {
+	margin-bottom: 48px;
+	border-top: 0.4px solid #45B606;
+}
+
+.conteudo-cadastro {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.conteudo-cadastro-div {
+	margin: auto;
+	text-align: center;
+	border-radius: 30px;
+	padding: 20px;
+	width: 370px;
+	height: 450px;
+}
+
+.conteudo-cadastro-tema {
 	font-size: 22px;
 	font-family: Courier, monospace;
 }
 
-h2 {
-	font-size: 15px;
-	font-family: Courier, monospace;
-}
-
-form {
+.conteudo-cadastro-form {
 	font-family: FreeMono, monospace;
+	text-align: right;
+	padding: 40px;
 }
 
-input {
+.conteudo-cadastro-input {
 	font-family: FreeMono, monospace;
 	border-radius: 5px;
-  	width: 120px;
+	width: 120px;
 	height: 15px;
 	background-color: #f2f2f2;
-  	padding: 3px;
-  	border: 1px solid #15969d;
-  	color: #333;
+	padding: 10px;
+	border: 1px solid #15969d;
+	color: #333;
 }
 
-input[type=submit] {
-	font-size: 17px;
-	border-radius: 10px;
-  	border: 1px solid #2F4F4F;
-  	background-color: #15969d;
-  	color: #000000;
-  	height: 30px;
-  	width: 100px;
+.conteudo-cadastro-botao {
+	padding: 30px; 
 }
 
-button {
+.conteudo-cadastro-botao-cadastrar {
 	font-family: FreeMono, monospace;
 	font-size: 17px;
-	border-radius: 10px;
-  	border: 1px solid #B89600;
-  	background-color: #fffaa7;
-  	height: 40px;
-  	width: 100px;
+	border-radius: 30px;
+	border: 1px solid #2F4F4F;
+	background-color: #15969d;
+	width: 120px;
+	height: 40px;
 }
 
-button:hover {
-	background-color: #ffa408;
-	color: #ffffff;
-}
-
-input[type=submit]:hover {
+.conteudo-cadastro-botao-cadastrar:hover {
 	background-color: #006556;
 	color: #ffffff;
 }
 
-form {
-	text-align:right;
-	padding: 20px;
+.rodape {
+	padding: 32px;
+	border-top: 0.4px solid #45B606;
 }
-
-section {
-	padding: 30px;
-	text-align: center;
-}
-
