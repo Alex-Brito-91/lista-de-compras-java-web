@@ -24,12 +24,16 @@
 		<section class="conteudo-cadastro">
 			<div class="conteudo-cadastro-div">
 				<h1 class="conteudo-cadastro-tema">Cadastrar Produtos</h1>
-				<form class="conteudo-cadastro-form"
-					action="${linkServletNovoProduto}" method="post">
+				<form class="conteudo-cadastro-form" action="${linkServletNovoProduto}" method="post">
 
-					Nome: <input class="conteudo-cadastro-input" type="text" name="nome" /> <br>
-					Valor: <input class="conteudo-cadastro-input" type="text" name="valor" /> <br>
-					Quantidade: <input class="conteudo-cadastro-input" type="text" name="quant" /> <br>
+					Nome<br>
+					<input class="conteudo-cadastro-input-nome" type="text" name="nome" /> <br>
+					
+					Valor<br>
+					<input class="conteudo-cadastro-input-valor" type="text" name="valor" /> <br>
+					
+					Quantidade<br>
+					<input class="conteudo-cadastro-input-quant" type="text" name="quant" />
 
 					<section class="conteudo-cadastro-botao">
 						<input class="conteudo-cadastro-botao-cadastrar" type="submit" value="cadastrar" />

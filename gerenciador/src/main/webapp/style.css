@@ -38,6 +38,10 @@ body {
 	color: #000000;
 }
 
+.cabecalho-menu-item:hover {
+	color: #45B606;
+}
+
 .conteudo {
 	margin-bottom: 48px;
 	border-top: 0.4px solid #45B606; 

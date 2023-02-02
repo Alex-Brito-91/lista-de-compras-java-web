@@ -39,6 +39,10 @@ body {
 	color: #000000;
 }
 
+.cabecalho-menu-item:hover {
+	color: #45B606;
+}
+
 .conteudo {
 	margin-bottom: 48px;
 	border-top: 0.4px solid #45B606;
@@ -61,34 +65,52 @@ body {
 }
 
 .conteudo-cadastro-tema {
-	font-size: 22px;
-	font-family: Courier, monospace;
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	padding: 20px;
 }
 
 .conteudo-cadastro-form {
 	font-family: FreeMono, monospace;
-	text-align: right;
-	padding: 40px;
+	font-size: 19px;
+	text-align: left;
 }
 
-.conteudo-cadastro-input {
-	font-family: FreeMono, monospace;
+.conteudo-cadastro-input-nome {
 	border-radius: 5px;
-	width: 120px;
-	height: 15px;
+	width: 150px;
+	height: 25px;
 	background-color: #f2f2f2;
-	padding: 10px;
 	border: 1px solid #15969d;
-	color: #333;
+	color: #000000;
+	margin: 10px;
 }
 
-.conteudo-cadastro-botao {
-	padding: 30px; 
+.conteudo-cadastro-input-valor {
+	border-radius: 5px;
+	width: 80px;
+	height: 25px;
+	background-color: #f2f2f2;
+	border: 1px solid #15969d;
+	color: #000000;
+	margin: 10px;
+}
+
+.conteudo-cadastro-input-quant {
+	border-radius: 5px;
+	width: 50px;
+	height: 25px;
+	background-color: #f2f2f2;
+	border: 1px solid #15969d;
+	color: #000000;
+	margin: 10px;
 }
 
 .conteudo-cadastro-botao-cadastrar {
+	margin: 40px;
 	font-family: FreeMono, monospace;
-	font-size: 17px;
+	font-size: 19px;
 	border-radius: 30px;
 	border: 1px solid #2F4F4F;
 	background-color: #15969d;
