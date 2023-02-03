@@ -20,11 +20,11 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	padding: 25px;
+	padding: 20px;
 }
 
 .cabecalho-imagem {
-	height: 72px;
+	height: 75px;
 }
 
 .cabecalho-menu {
@@ -46,6 +46,7 @@ body {
 .conteudo {
 	margin-bottom: 48px;
 	border-top: 0.4px solid #45B606;
+	padding: 30px;
 }
 
 .conteudo-cadastro {
@@ -56,12 +57,11 @@ body {
 }
 
 .conteudo-cadastro-div {
-	margin: auto;
-	text-align: center;
-	border-radius: 30px;
 	padding: 20px;
 	width: 370px;
 	height: 450px;
+	border: 1px solid #45B606;
+	border-radius: 20px;
 }
 
 .conteudo-cadastro-tema {
@@ -69,58 +69,72 @@ body {
 	font-weight: 500;
 	font-size: 40px;
 	padding: 20px;
+	text-align: center;
 }
 
 .conteudo-cadastro-form {
 	font-family: FreeMono, monospace;
 	font-size: 19px;
-	text-align: left;
+}
+
+.div-input-nome {
+	margin: 30px;
 }
 
 .conteudo-cadastro-input-nome {
 	border-radius: 5px;
+	border: 1px solid #45B606;
 	width: 150px;
 	height: 25px;
-	background-color: #f2f2f2;
-	border: 1px solid #15969d;
+	background-color: #FFFFFF;
 	color: #000000;
-	margin: 10px;
+}
+
+.div-input-valor {
+	margin: 30px;
 }
 
 .conteudo-cadastro-input-valor {
 	border-radius: 5px;
 	width: 80px;
 	height: 25px;
-	background-color: #f2f2f2;
-	border: 1px solid #15969d;
+	background-color: #FFFFFF;
+	border: 1px solid #45B606;
 	color: #000000;
-	margin: 10px;
+}
+
+.div-input-quant {
+	margin: 30px;
 }
 
 .conteudo-cadastro-input-quant {
 	border-radius: 5px;
 	width: 50px;
 	height: 25px;
-	background-color: #f2f2f2;
-	border: 1px solid #15969d;
+	background-color: #FFFFFF;
+	border: 1px solid #45B606;
 	color: #000000;
-	margin: 10px;
 }
 
-.conteudo-cadastro-botao-cadastrar {
-	margin: 40px;
+.conteudo-cadastro-botao {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.botao-input-cadastrar {
 	font-family: FreeMono, monospace;
 	font-size: 19px;
-	border-radius: 30px;
-	border: 1px solid #2F4F4F;
-	background-color: #15969d;
-	width: 120px;
+	border: none;
+	border-radius: 20px;
+	background-color: #45B606;
+	width: 130px;
 	height: 40px;
 }
 
-.conteudo-cadastro-botao-cadastrar:hover {
-	background-color: #006556;
-	color: #ffffff;
+.botao-input-cadastrar:hover {
+	background-color: #15969D;
 }
 
 .rodape {
