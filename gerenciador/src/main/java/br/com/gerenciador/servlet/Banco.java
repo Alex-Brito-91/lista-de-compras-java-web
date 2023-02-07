@@ -7,6 +7,8 @@ import java.util.List;
 public class Banco {
 	
 	private static List<Produto> produtos = new ArrayList<>();
+	private static List<Saldo> saldo = new ArrayList<>();
+	
 	private static Integer chaveSequencial = 1;
 	
 	public void adiciona(Produto produto) {
@@ -38,5 +40,13 @@ public class Banco {
 			}
 		} return null;
 		
+	}
+	
+	public void adicionaSaldo(Saldo saldo) {
+		Banco.saldo.add(saldo);
+	}
+	
+	public List<Saldo> getSaldo() {
+		return Banco.saldo;
 	}
 }
