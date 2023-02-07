@@ -141,3 +141,28 @@ body {
 	padding: 32px;
 	border-top: 0.4px solid #45B606;
 }
+
+.conteudo-saldo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.conteudo-saldo-tema {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	padding: 20px;
+	text-align: center;
+}
+
+.conteudo-saldo-div {
+	font-family: FreeMono, monospace;
+	font-size: 19px;
+	padding: 20px;
+	width: 370px;
+	height: 450px;
+	border: 1px solid #45B606;
+	border-radius: 20px;
+}
