@@ -6,10 +6,9 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Saldo</title>
-	<link rel="stylesheet" type="text/css" href="formSaldo.css">
+	<link rel="stylesheet" type="text/css" href="style_saldo.css">
 </head>
 <body>
 	<header class="cabecalho-saldo">
@@ -21,7 +20,7 @@
 		</nav>
 	</header>
 
-	<main>
+	<main class="conteudo">
 		<section class="conteudo-principal">
 			<div class="conteudo-principal-div">
 				<h1 class="conteudo-principal-tema">Saldo para Compras</h1>

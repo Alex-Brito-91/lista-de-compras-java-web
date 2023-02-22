@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed&family=Sofia+Sans+Semi+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@200;400&family=Sofia+Sans+Semi+Condensed&display=swap');
 
+
 * {
 	margin: 0;
 	padding: 0;
@@ -42,45 +43,24 @@ body {
 	color: #45B606;
 }
 
-.conteudo-principal {
-	font-family: FreeMono, monospace;
-	border-radius: 5px;
-  	width: 120px;
-	text-align: center;
-	background-color: #f2f2f2;
-  	padding: 3px;
-  	border: 1px solid #15969d;
-  	color: #333;
-}
-
-.conteudo-principal-form {
-	font-family: FreeMono, monospace;
-	text-align:right;
-	padding: 20px;
-}
-
-.conteudo-principal-tema {
-	font-size: 22px;
-	font-family: Courier, monospace;
-}
-
-.botao-cadastrar {
-	font-size: 17px;
-	border-radius: 10px;
-  	border: 1px solid #2F4F4F;
-  	background-color: #15969d;
-  	color: #000000;
-  	height: 30px;
-  	width: 100px;
-}
-
-.botao-cadastrar:hover {
-	background-color: #006556;
-	color: #ffffff;
-}
-
-.rodape {
-	padding: 32px;
+.conteudo {
+	margin-bottom: 48px;
 	border-top: 0.4px solid #45B606;
+	padding: 30px;
+}
+
+.conteudo-principal {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.conteudo-principal-div {
+	padding: 20px;
+	width: 370px;
+	height: 450px;
+	border: 1px solid #45B606;
+	border-radius: 20px;
 }
 
