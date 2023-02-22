@@ -16,6 +16,8 @@ public class SaldoServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("cadastrando novo saldo");
+		
 		BigDecimal valeAlimentacao1 = new BigDecimal(request.getParameter("vale1").replaceAll(",", "."));
 		BigDecimal valeAlimentacao2 = new BigDecimal(request.getParameter("vale2").replaceAll(",", "."));
 		BigDecimal dinheiro = new BigDecimal(request.getParameter("dinheiro").replaceAll(",", "."));

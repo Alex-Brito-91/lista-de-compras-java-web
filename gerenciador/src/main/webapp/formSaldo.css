@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed&family=Sofia+Sans+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@200;400&family=Sofia+Sans+Semi+Condensed&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	font-size: 100%;
+	background-color: #dcfecc;
+}
+
+.cabecalho-saldo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.cabecalho-imagem-saldo {
+	height: 75px;
+}
+
+.cabecalho-menu-saldo {
+	display: flex;
+	gap: 32px;
+}
+
+.cabecalho-menu-item-saldo {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	color: #000000;
+}
+
+.cabecalho-menu-item-saldo:hover {
+	color: #45B606;
+}
+
+.conteudo-principal {
+	font-family: FreeMono, monospace;
+	border-radius: 5px;
+  	width: 120px;
+	text-align: center;
+	background-color: #f2f2f2;
+  	padding: 3px;
+  	border: 1px solid #15969d;
+  	color: #333;
+}
+
+.conteudo-principal-form {
+	font-family: FreeMono, monospace;
+	text-align:right;
+	padding: 20px;
+}
+
+.conteudo-principal-tema {
+	font-size: 22px;
+	font-family: Courier, monospace;
+}
+
+.botao-cadastrar {
+	font-size: 17px;
+	border-radius: 10px;
+  	border: 1px solid #2F4F4F;
+  	background-color: #15969d;
+  	color: #000000;
+  	height: 30px;
+  	width: 100px;
+}
+
+.botao-cadastrar:hover {
+	background-color: #006556;
+	color: #ffffff;
+}
+
+.rodape {
+	padding: 32px;
+	border-top: 0.4px solid #45B606;
+}
+
