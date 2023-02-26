@@ -48,48 +48,7 @@ body {
 	padding: 30px;
 }
 
-h1 {
-	font-size: 20px;
-	font-family: Courier, monospace;
-}
-
-h2, h3 {
-	font-size: 18px;
-	font-family: Courier, monospace;
-}
-
-
-table {
-	padding: 10px;
-	margin: auto;
-	background-color: white;
-	border-radius: 10px;
-	border: 1px solid #B89600;
-}
-
-th {
-	text-align: center;
-	width: 80px;
-	font-weight: bold;
-	font-family: Courier, monospace;
-}
-
-td {
-	text-align: center;
-	font-family: FreeMono, monospace;
-}
-
-tr:hover:nth-child(1n + 1) {
-	background-color: #ffe151;
-	color: #000000;
-}
-
-a {
-	font-family: FreeMono, monospace;
-	font-size: 15px;
-}
-
-div {
+.conteudo-principal-tabela-div {
 	margin: auto;
 	padding: 20px;
 	text-align: center;
@@ -99,20 +58,90 @@ div {
 	max-width: 500px;
 }
 
-button {
-	font-family: FreeMono, monospace;
-	font-size: 17px;
-	border-radius: 10px;
-  	border: 1px solid #2F4F4F;
-  	background-color: #15969d;
-  	color: #fff;
-  	height: 40px;
-  	width: 120px;
+.conteudo-principal-tabela-tema {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	padding: 20px;
+	text-align: center;
 }
 
-button:hover {
-	background-color: #006556;
-	color: #ffffff;
+h2 {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	padding: 20px;
+	text-align: center;
+}
+
+.tabela {
+	padding: 10px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid #B89600;
+}
+
+.itens-tabela:hover:nth-child(1n + 1) {
+	background-color: #ffe151;
+	color: #000000;
+}
+
+.cabecalho-tabela {
+	text-align: center;
+	width: 80px;
+	font-weight: bold;
+	font-family: Courier, monospace;
+}
+
+.conteudo-tabela {
+	text-align: center;
+	font-family: FreeMono, monospace;
+}
+
+.botao-alterar {
+	font-family: FreeMono, monospace;
+	font-size: 15px;
+}
+
+.botao-excluir {
+	font-family: FreeMono, monospace;
+	font-size: 15px;
+}
+
+.conteudo-principal-tabela-total {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	padding: 20px;
+	text-align: center;
+}
+
+.section-botao-voltar {
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.botao-voltar {
+	font-family: FreeMono, monospace;
+	font-size: 19px;
+	border: none;
+	border-radius: 20px;
+	background-color: #45B606;
+	width: 150px;
+	height: 40px;	
+}
+
+.botao-voltar:hover {
+	background-color: #15969D;
+}
+
+.rodape {
+	padding: 32px;
+	border-top: 0.4px solid #45B606;
 }
 
 
