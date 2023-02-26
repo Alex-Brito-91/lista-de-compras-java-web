@@ -31,7 +31,7 @@
 				</h2>
 				<table class="tabela">
 					<thead>
-						<tr class="itens-tabela">
+						<tr class="itens-cabecalho-tabela">
 							<th class="cabecalho-tabela">NOME</th>
 							<th class="cabecalho-tabela">VALOR UN</th>
 							<th class="cabecalho-tabela">QT</th>
@@ -42,7 +42,7 @@
 					</thead>
 					<tbody>
 						<c:forEach items="${produtos}" var="produto">
-							<tr>
+							<tr class="itens-conteudo-tabela">
 								<td class="conteudo-tabela">${produto.nome}</td>
 								<td class="conteudo-tabela">${produto.getValorUnString()}</td>
 								<td class="conteudo-tabela">${produto.quantidade}</td>

@@ -60,7 +60,7 @@ body {
 	text-align: center;
 	border-radius: 30px;
 	border: 1px solid #B89600;
-	background-color: #FBED53;
+	background-color: #FBF077;
 }
 
 .conteudo-principal-tabela-tema {
@@ -95,6 +95,10 @@ h2 {
 	font-family: Courier, monospace;
 }
 
+.itens-conteudo-tabela:hover {
+	background-color: #FFFF00;
+}
+
 .conteudo-tabela {
 	text-align: center;
 	font-family: FreeMono, monospace;
@@ -103,11 +107,21 @@ h2 {
 .botao-alterar {
 	font-family: FreeMono, monospace;
 	font-size: 15px;
+	color: #000000;
+}
+
+.botao-alterar:hover {
+	color: #01A9DB;
 }
 
 .botao-excluir {
 	font-family: FreeMono, monospace;
 	font-size: 15px;
+	color: #000000;
+}
+
+.botao-excluir:hover {
+	color: #FF0000;
 }
 
 .conteudo-principal-tabela-total {
