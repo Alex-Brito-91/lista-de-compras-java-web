@@ -48,6 +48,12 @@ body {
 	padding: 30px;
 }
 
+.conteudo-principal-tabela {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 .conteudo-principal-tabela-div {
 	margin: auto;
 	padding: 20px;
@@ -55,7 +61,6 @@ body {
 	border-radius: 30px;
 	border: 1px solid #B89600;
 	background-color: #FBED53;
-	max-width: 500px;
 }
 
 .conteudo-principal-tabela-tema {
@@ -69,22 +74,18 @@ body {
 h2 {
 	font-family: 'Sofia Sans Extra Condensed', sans-serif;
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 30px;
 	padding: 20px;
 	text-align: center;
 }
 
 .tabela {
+	width: 600px;
 	padding: 10px;
 	margin: auto;
 	background-color: white;
 	border-radius: 10px;
 	border: 1px solid #B89600;
-}
-
-.itens-tabela:hover:nth-child(1n + 1) {
-	background-color: #ffe151;
-	color: #000000;
 }
 
 .cabecalho-tabela {
@@ -110,9 +111,9 @@ h2 {
 }
 
 .conteudo-principal-tabela-total {
-	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-family: FreeMono, monospace;
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 20px;
 	padding: 20px;
 	text-align: center;
 }
@@ -131,7 +132,7 @@ h2 {
 	border: none;
 	border-radius: 20px;
 	background-color: #45B606;
-	width: 150px;
+	width: 220px;
 	height: 40px;	
 }
 
