@@ -27,7 +27,7 @@
 			<div class="conteudo-principal-tabela-div">
 				<h1 class="conteudo-principal-tabela-tema">LISTA DE PRODUTOS</h1>
 				<h2> Lista Criada em: 
-					<em><fmt:formatDate value="${data}"pattern="dd/MM/yyyy" /></em>
+					<em><fmt:formatDate value="${data}" pattern="dd/MM/yyyy"/></em>
 				</h2>
 				<table class="tabela">
 					<thead>
@@ -36,6 +36,7 @@
 							<th class="cabecalho-tabela">VALOR UN</th>
 							<th class="cabecalho-tabela">QT</th>
 							<th class="cabecalho-tabela">TOTAL</th>
+							<th class="cabecalho-tabela">&nbsp;</th>
 							<th class="cabecalho-tabela">&nbsp;</th>
 						</tr>
 					</thead>
@@ -48,6 +49,8 @@
 								<td class="conteudo-tabela">${produto.getValorTotalString()}</td>
 								<td class="conteudo-tabela">
 									<a class="botao-alterar"href="/gerenciador/mostraProduto?id=${produto.id}">alterar</a>
+								</td>
+								<td class="conteudo-tabela">
 									<a class="botao-excluir"href="/gerenciador/removeProduto?id=${produto.id}">excluir</a>
 								</td>
 							</tr>
