@@ -52,15 +52,97 @@ body {
 .conteudo-principal {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	justify-content: space-around;
 }
 
 .conteudo-principal-div {
-	padding: 20px;
-	width: 370px;
+	padding: 10px;
+	width: 400px;
 	height: 450px;
 	border: 1px solid #45B606;
 	border-radius: 20px;
 }
+
+.conteudo-principal-tema {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	padding: 20px;
+	text-align: center;
+}
+
+.conteudo-principal-form {
+	font-family: FreeMono, monospace;
+	font-size: 19px;
+}
+
+.div-input-alimentacao1 {
+	margin: 20px;
+	margin-left: 30px;
+}
+
+.conteudo-principal-input-alimentacao1 {
+	border-radius: 5px;
+	border: 1px solid #45B606;
+	width: 80px;
+	height: 25px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.div-input-alimentacao2 {
+	margin: 20px;
+	margin-left: 30px;
+}
+
+.conteudo-principal-input-alimentacao2 {
+	border-radius: 5px;
+	border: 1px solid #45B606;
+	width: 80px;
+	height: 25px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.div-input-dinheiro {
+	margin: 20px;
+	margin-left: 144px;
+}
+
+.conteudo-principal-input-dinheiro {
+	border-radius: 5px;
+	border: 1px solid #45B606;
+	width: 80px;
+	height: 25px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.section-botao-cadastrar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.botao-cadastrar {
+	font-family: FreeMono, monospace;
+	font-size: 19px;
+	border: none;
+	border-radius: 20px;
+	background-color: #45B606;
+	width: 130px;
+	height: 40px;
+}
+
+.botao-cadastrar:hover {
+	background-color: #15969D;
+}
+
+.rodape {
+	padding: 32px;
+	border-top: 0.4px solid #45B606;
+}
+
+
 
