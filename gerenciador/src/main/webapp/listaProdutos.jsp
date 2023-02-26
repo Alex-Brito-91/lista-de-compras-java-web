@@ -25,48 +25,45 @@
 	<main class="conteudo">
 		<section class="conteudo-principal-tabela">
 			<div class="conteudo-principal-tabela-div">
-				<h1>
-					LISTA DE PRODUTOS<br />
-				</h1>
-		
-				<h2>
-					Lista Criada em: <em><fmt:formatDate value="${data}"
-							pattern="dd/MM/yyyy" /></em>
+				<h1 class="conteudo-principal-tabela-tema">LISTA DE PRODUTOS</h1>
+				<h2> Lista Criada em: 
+					<em><fmt:formatDate value="${data}"pattern="dd/MM/yyyy" /></em>
 				</h2>
-		
-				<table>
+				<table class="tabela">
 					<thead>
-						<tr>
-							<th>NOME</th>
-							<th>VALOR UN</th>
-							<th>QT</th>
-							<th>TOTAL</th>
-							<th>&nbsp;</th>
+						<tr class="itens-tabela">
+							<th class="cabecalho-tabela">NOME</th>
+							<th class="cabecalho-tabela">VALOR UN</th>
+							<th class="cabecalho-tabela">QT</th>
+							<th class="cabecalho-tabela">TOTAL</th>
+							<th class="cabecalho-tabela">&nbsp;</th>
 						</tr>
 					</thead>
 					<tbody>
 						<c:forEach items="${produtos}" var="produto">
 							<tr>
-								<td>${produto.nome}</td>
-								<td>${produto.getValorUnString()}</td>
-								<td>${produto.quantidade}</td>
-								<td>${produto.getValorTotalString()}</td>
-								<td><a href="/gerenciador/mostraProduto?id=${produto.id}">alterar</a>
-									<a href="/gerenciador/removeProduto?id=${produto.id}">excluir</a>
+								<td class="conteudo-tabela">${produto.nome}</td>
+								<td class="conteudo-tabela">${produto.getValorUnString()}</td>
+								<td class="conteudo-tabela">${produto.quantidade}</td>
+								<td class="conteudo-tabela">${produto.getValorTotalString()}</td>
+								<td class="conteudo-tabela">
+									<a class="botao-alterar"href="/gerenciador/mostraProduto?id=${produto.id}">alterar</a>
+									<a class="botao-excluir"href="/gerenciador/removeProduto?id=${produto.id}">excluir</a>
 								</td>
 							</tr>
 						</c:forEach>
 					</tbody>
 				</table>
-				<h3>
-					Total da compra: <em>${totalCompra}</em>
-				</h3>
-				<a href="/gerenciador/formNovoProduto.jsp">
-					<button>voltar ao cadastro</button>
-				</a>
+				<h3 class="conteudo-principal-tabela-total">Total da compra: <em>${totalCompra}</em></h3>
+				<section class="section-botao-voltar">
+					<a href="/gerenciador/formNovoProduto.jsp">
+						<button class="botao-voltar">voltar ao cadastro</button>
+					</a>
+				</section>
 			</div>
 		</section>
 	</main>
 	
+	<footer class="rodape"> </footer>
 </body>
 </html>
