@@ -2,7 +2,6 @@ package br.com.gerenciador.servlet;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

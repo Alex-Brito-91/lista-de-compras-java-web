@@ -1,38 +1,35 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import= "java.util.List, br.com.gerenciador.servlet.Saldo"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ page language="java" %>
+<%@ page import="java.math.BigDecimal" %>
+
+<%
+	BigDecimal saldoAlimentacao1 = (BigDecimal)request.getAttribute("vale1");
+	System.out.println(saldoAlimentacao1);
+	
+	BigDecimal saldoAlimentacao2 = (BigDecimal)request.getAttribute("vale2");
+	System.out.println(saldoAlimentacao2);
+	
+	BigDecimal saldoDinheiro = (BigDecimal)request.getAttribute("dinheiro");
+	System.out.println(saldoDinheiro);
+%>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style_saldo_criado.css">
 	<title>Saldo Criado</title>
 </head>
 <body>
-	<header class="cabecalho">
-		<a class="cabecalho-imagem" href="paginaInicial.jsp">  <img src="shopping-basket.png" alt="logo do carrinho"></a>		
-		<nav class="cabecalho-menu">
-			<a class="cabecalho-menu-item" href="paginaInicial.jsp">PÃ¡gina Inicial</a> 
-			<a class="cabecalho-menu-item" href="formNovoProduto.jsp">Cadastro de Produtos</a> 
-			<a class="cabecalho-menu-item" href="listaProdutos.jsp">Lista de Produtos</a>
-		</nav>
-	</header>
-
-	<main class="conteudo">
-		<section class="conteudo-saldo">
+	<main class="conteudo-saldo-criado">
+		<section class="conteudo-saldo-section">
 			<div class="conteudo-saldo-div">
-				<br><h1 class="conteudo-saldo-tema">Saldo para Compras</h1>
-					Vale AlimentaÃ§Ã£o 1: ${saldo.alimentacao1} <br/>
-					<br>Vale AlimentaÃ§Ã£o 2: ${saldo.alimentacao2} <br/>
-					<br>Dinheiro: ${saldo.dinheiro} <br/>
+				    <h1 class="conteudo-saldo-tema">Saldo para Compras</h1>
+					<p>Vale Alimentação 1: <%= saldoAlimentacao1 %> </p>
+					<p>Vale Alimentação 2: <%= saldoAlimentacao1 %> </p>
+					<p>Dinheiro: <%= saldoDinheiro %> </p>
 			</div>
 		</section>
 	</main>
-
-	<footer class="rodape"> </footer>
 </body>
 </html>
