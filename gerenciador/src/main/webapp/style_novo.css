@@ -56,10 +56,21 @@ body {
 	justify-content: space-around;
 }
 
+.conteudo-compra-div {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	padding: 20px;
+	width: 330px;
+	height: 130px;
+	background-color: #7CFC92;
+	border: 1px solid #45B606;
+	border-radius: 20px;
+}
 .conteudo-cadastro-div {
 	padding: 20px;
 	width: 370px;
-	height: 450px;
+	height: 520px;
 	background-color: #7CFC92;
 	border: 1px solid #45B606;
 	border-radius: 20px;
@@ -69,8 +80,7 @@ body {
 	font-family: 'Sofia Sans Extra Condensed', sans-serif;
 	font-weight: 500;
 	font-size: 40px;
-	padding: 20px;
-	text-align: center;
+	margin-left: 30px;
 }
 
 .conteudo-cadastro-form {

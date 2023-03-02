@@ -24,7 +24,9 @@
 				<div class="conteudo-principal-escrito">
 					<h1 class="conteudo-principal-escrito-titulo">Lista de Compras</h1>
 					<h2 class="conteudo-principal-escrito-subtitulo">Uma lista para cadastrar e calcular suas compras</h2>
-					<button class="conteudo-principal-escrito-botao">Começar!</button>
+					<a href="formSaldo.jsp">
+						<button class="conteudo-principal-escrito-botao">Começar!</button>
+					</a>
 				</div>
 				<img class="conteudo-principal-imagem" alt="carrinho de compras" src="listbasket2.png">
 			</section>
