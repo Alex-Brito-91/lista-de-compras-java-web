@@ -68,6 +68,13 @@ body {
 	border-radius: 20px;
 	margin-bottom: 30px;
 }
+
+.conteudo-compra-texto {
+	text-align: right;
+	width: 170px;
+	height: 100px;
+}
+
 .conteudo-cadastro-div {
 	padding: 20px;
 	width: 370px;
