@@ -2,6 +2,8 @@ package br.com.gerenciador.servlet;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,6 +25,7 @@ public class SaldoServlet extends HttpServlet {
 		BigDecimal dinheiro = new BigDecimal(request.getParameter("dinheiro").replaceAll(",", "."));
 		
 		BigDecimal saldoTotal = valeAlimentacao1.add(valeAlimentacao2).add(dinheiro);
+		String totalFormatado = DecimalFormat.getCurrencyInstance().format(saldoTotal);
 				
 		Saldo saldo = new Saldo();
 		saldo.setAlimentação1(valeAlimentacao1);
@@ -36,7 +39,7 @@ public class SaldoServlet extends HttpServlet {
 		request.setAttribute("vale1", saldo.getAlimentação1());
 		request.setAttribute("vale2", saldo.getAlimentacao2());
 		request.setAttribute("dinheiro", saldo.getDinheiro());
-		request.setAttribute("total", saldoTotal);
+		request.setAttribute("total", totalFormatado);
 		rd.forward(request, response);
 		
 	}
