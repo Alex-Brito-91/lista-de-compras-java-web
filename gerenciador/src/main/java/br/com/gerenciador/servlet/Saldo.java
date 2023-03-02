@@ -31,5 +31,5 @@ public class Saldo {
 	public void setDinheiro(BigDecimal dinheiro) {
 		this.dinheiro = dinheiro;
 	}
-
+	
 }

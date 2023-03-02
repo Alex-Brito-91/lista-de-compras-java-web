@@ -13,6 +13,7 @@
 				<p>Vale Alimentação 1: ${ vale1 }</p>
 				<p>Vale Alimentação 2: ${ vale2 }</p>
 				<p>Dinheiro: ${ dinheiro }</p>
+				<h2>Saldo Total: ${ total }</h2>
 			</div>
 		</section>
 	</main>
