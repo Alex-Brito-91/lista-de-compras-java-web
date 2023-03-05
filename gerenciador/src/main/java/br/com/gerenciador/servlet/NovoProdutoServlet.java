@@ -4,7 +4,10 @@ import java.io.IOException;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
+import java.util.Date;
+import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,11 +35,6 @@ public class NovoProdutoServlet extends HttpServlet {
 		
 		Banco banco = new Banco();
 		banco.adiciona(produto);
-		
-		request.setAttribute("nome", produto.getNome());
-		request.setAttribute("valor", produto.getValorUnitario());
-		request.setAttribute("quantidade", produto.getQuantidade());
-		request.setAttribute("total", produto.getValorTotal());
 		
 		response.sendRedirect("listaProdutos");
 		
