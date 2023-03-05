@@ -30,11 +30,10 @@ public class ListaProdutosServlet extends HttpServlet {
 		}
 		
 		String totalFormatado = DecimalFormat.getCurrencyInstance().format(totalDaCompra);
+		Date dataLista = new Date();
 		
 		request.setAttribute("produtos", produtos);
 		request.setAttribute("totalCompra", totalFormatado);
-		
-		Date dataLista = new Date();
 		request.setAttribute("data", dataLista);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos.jsp");
