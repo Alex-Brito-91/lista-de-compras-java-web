@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:url value="/novoProduto" var="linkServletNovoProduto" />
+<c:url value="/saldo" var="linkServletNovoSaldo" />
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -16,7 +17,7 @@
 		<nav class="cabecalho-menu">
 			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página Inicial</a> 
 			<a class="cabecalho-menu-item" href="formSaldo.jsp">Seu Saldo</a> 
-			<a class="cabecalho-menu-item" href="listaProdutos.jsp">Lista de Produtos</a>
+			<a class="cabecalho-menu-item" href="listaProdutos">Lista de Produtos</a>
 		</nav>
 	</header>
 
