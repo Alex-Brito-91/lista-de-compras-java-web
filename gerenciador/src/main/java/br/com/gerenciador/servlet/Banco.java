@@ -1,5 +1,7 @@
 package br.com.gerenciador.servlet;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -7,7 +9,7 @@ import java.util.List;
 public class Banco {
 	
 	private static List<Produto> produtos = new ArrayList<>();
-	private static List<Saldo> saldo = new ArrayList<>();
+	private static Saldo saldo = new Saldo();
 	
 	private static Integer chaveSequencial = 1;
 	
@@ -42,11 +44,20 @@ public class Banco {
 		
 	}
 	
-	public void adicionaSaldo(Saldo saldo) {
-		Banco.saldo.add(saldo);
+	public String totalCompra() {
+		BigDecimal totalDaCompra = new BigDecimal(0);
+		for (Produto produto : produtos) {
+			totalDaCompra = totalDaCompra.add(produto.getValorTotal());
+		}
+		String totalFormatado = DecimalFormat.getCurrencyInstance().format(totalDaCompra);
+		return totalFormatado;
 	}
 	
-	public List<Saldo> getSaldo() {
-		return Banco.saldo;
+	public String saldoTotal() {
+		BigDecimal saldoTotal = new BigDecimal(0);
+		saldoTotal = saldoTotal.add(saldo.getAlimentação1().add(saldo.getAlimentacao2().add(saldo.getDinheiro())));
+		String totalFormatado = DecimalFormat.getCurrencyInstance().format(saldoTotal);
+		return totalFormatado;
 	}
+	
 }
