@@ -23,21 +23,16 @@ public class ListaProdutosServlet extends HttpServlet {
 		Banco banco = new Banco();
 		List<Produto> produtos = banco.getProdutos();
 		
-		BigDecimal totalDaCompra = new BigDecimal(0);
-		
-		for (Produto produto : produtos) {
-			totalDaCompra = totalDaCompra.add(produto.getValorTotal());
-		}
-		
-		String totalFormatado = DecimalFormat.getCurrencyInstance().format(totalDaCompra);
 		Date dataLista = new Date();
 		
 		request.setAttribute("produtos", produtos);
-		request.setAttribute("totalCompra", totalFormatado);
+		request.setAttribute("totalCompra", banco.totalCompra());
 		request.setAttribute("data", dataLista);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos.jsp");
 		rd.forward(request, response);
+		
+		response.sendRedirect("formNovoProduto.jsp");
 		
 	}
 
