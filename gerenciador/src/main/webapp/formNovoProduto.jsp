@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page import="java.util.List, br.com.gerenciador.servlet.Saldo"%>
 <c:url value="/novoProduto" var="linkServletNovoProduto" />
 <c:url value="/saldo" var="linkServletNovoSaldo" />
 

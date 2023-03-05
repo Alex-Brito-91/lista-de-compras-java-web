@@ -27,19 +27,19 @@ public class SaldoServlet extends HttpServlet {
 		BigDecimal saldoTotal = valeAlimentacao1.add(valeAlimentacao2).add(dinheiro);
 		String totalFormatado = DecimalFormat.getCurrencyInstance().format(saldoTotal);
 				
+		Banco banco = new Banco();
+		
 		Saldo saldo = new Saldo();
 		saldo.setAlimentação1(valeAlimentacao1);
 		saldo.setAlimentacao2(valeAlimentacao2);
 		saldo.setDinheiro(dinheiro);
 		
-		Banco banco = new Banco();
-		banco.adicionaSaldo(saldo);
-		
-		RequestDispatcher rd = request.getRequestDispatcher("/formSaldoCriado.jsp");
 		request.setAttribute("vale1", saldo.getAlimentação1());
 		request.setAttribute("vale2", saldo.getAlimentacao2());
 		request.setAttribute("dinheiro", saldo.getDinheiro());
 		request.setAttribute("total", totalFormatado);
+		
+		RequestDispatcher rd = request.getRequestDispatcher("/formSaldoCriado.jsp");
 		rd.forward(request, response);
 		
 	}
