@@ -61,10 +61,10 @@ public class Banco {
 		return Banco.saldo;
 	}
 	
-	public String saldoTotal(List<Saldo> saldos) {
+	public String saldoTotal() {
 		BigDecimal saldoTotal = BigDecimal.ZERO;
-		for (Saldo saldo : saldos) {
-			saldoTotal = saldoTotal.add(saldo.getAlimentação1().add(saldo.getAlimentacao2().add(saldo.getDinheiro())));
+		for (Saldo i : saldo) {
+			saldoTotal = saldoTotal.add(i.getAlimentação1().add(i.getAlimentacao2().add(i.getDinheiro())));
 		}
 		String totalFormatado = DecimalFormat.getCurrencyInstance().format(saldoTotal);
 		return totalFormatado;

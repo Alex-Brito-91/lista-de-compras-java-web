@@ -34,8 +34,6 @@ public class ListaProdutosServlet extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos.jsp");
 		rd.forward(request, response);
 		
-		response.sendRedirect("formNovoProduto.jsp");
-		
 	}
 
 }

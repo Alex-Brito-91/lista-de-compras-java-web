@@ -24,9 +24,6 @@ public class SaldoServlet extends HttpServlet {
 		BigDecimal valeAlimentacao2 = new BigDecimal(request.getParameter("vale2").replaceAll(",", "."));
 		BigDecimal dinheiro = new BigDecimal(request.getParameter("dinheiro").replaceAll(",", "."));
 		
-		BigDecimal saldoTotal = valeAlimentacao1.add(valeAlimentacao2).add(dinheiro);
-		String totalFormatado = DecimalFormat.getCurrencyInstance().format(saldoTotal);
-		
 		Saldo saldo = new Saldo();
 		saldo.setAlimentação1(valeAlimentacao1);
 		saldo.setAlimentacao2(valeAlimentacao2);
@@ -35,13 +32,7 @@ public class SaldoServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adicionaSaldo(saldo);
 		
-//		request.setAttribute("vale1", saldo.getAlimentação1());
-//		request.setAttribute("vale2", saldo.getAlimentacao2());
-//		request.setAttribute("dinheiro", saldo.getDinheiro());
-		request.setAttribute("total", totalFormatado);
-		
-		RequestDispatcher rd = request.getRequestDispatcher("/formNovoProduto.jsp");
-		rd.forward(request, response);
+		response.sendRedirect("totaisServlet");
 		
 	}
 	
