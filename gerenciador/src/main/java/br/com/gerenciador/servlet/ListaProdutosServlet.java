@@ -23,15 +23,18 @@ public class ListaProdutosServlet extends HttpServlet {
 		System.out.println("criando lista de produtos");
 		
 		Banco banco = new Banco();
+		Date dataLista = new Date();
 		List<Produto> produtos = banco.getProdutos();
 		
-		String totalFormatado = DecimalFormat.getCurrencyInstance().format(banco.totalCompra());
+		String totalF = DecimalFormat.getCurrencyInstance().format(banco.totalCompra());
+		String saldoF = DecimalFormat.getCurrencyInstance().format(banco.saldoTotal());
+		String restanteF = DecimalFormat.getCurrencyInstance().format(banco.saldoRestante());
 		
-		Date dataLista = new Date();
-		
-		request.setAttribute("produtos", produtos);
-		request.setAttribute("totalCompra", totalFormatado);
 		request.setAttribute("data", dataLista);
+		request.setAttribute("produtos", produtos);
+		request.setAttribute("totalCompra", totalF);
+		request.setAttribute("saldoTotal", saldoF);
+		request.setAttribute("totalRestante", restanteF);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos.jsp");
 		rd.forward(request, response);

@@ -57,7 +57,11 @@
 						</c:forEach>
 					</tbody>
 				</table>
-				<h3 class="conteudo-principal-tabela-total">Total da compra: <em>${totalCompra}</em></h3>
+				<h3 class="conteudo-principal-tabela-total">
+					Total da compra: <em>${totalCompra}</em><br>
+					Saldo Total: <em>${saldoTotal}</em><br>
+					Saldo Restante: <em>${totalRestante}</em>
+				</h3>
 				<section class="section-botao-voltar">
 					<a href="totaisServlet">
 						<button class="botao-voltar">voltar ao cadastro</button>

@@ -16,8 +16,6 @@ public class TotaisServlet extends HttpServlet {
        
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		System.out.println("calculando totais de saldo e compra");
-		
 		Banco banco = new Banco();
 		
 		String totalF = DecimalFormat.getCurrencyInstance().format(banco.totalCompra());
