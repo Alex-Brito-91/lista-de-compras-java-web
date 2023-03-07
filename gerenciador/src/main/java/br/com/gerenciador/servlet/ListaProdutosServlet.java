@@ -20,6 +20,8 @@ public class ListaProdutosServlet extends HttpServlet {
        
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("criando lista de produtos");
+		
 		Banco banco = new Banco();
 		List<Produto> produtos = banco.getProdutos();
 		
