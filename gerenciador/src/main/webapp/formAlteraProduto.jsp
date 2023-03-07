@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cadastro de Produto</title>
-	<link rel="stylesheet" type="text/css" href="style_altera.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Produto</title>
+<link rel="stylesheet" type="text/css" href="style_altera.css">
 </head>
 
 <body>
@@ -19,15 +19,20 @@
 		<section class="conteudo-altera-section">
 			<div class="conteudo-altera-div">
 				<h1 class="conteudo-altera-tema">Alterar Produto</h1>
-				<form class="conteudo-altera-form"
-					action="${linkServletNovoProduto}" method="post">
-					<br> Nome: <input class="conteudo-altera-input-nome"
-						type="text" name="nome" value="${produto.nome}" /><br> Valor:
-					<input class="conteudo-altera-input-valor" type="text" name="valor"
-						value="${produto.valorUnitario}" /><br> Quantidade: <input
-						class="conteudo-altera-input-quant" type="text" name="quant"
-						value="${produto.quantidade}" /><br> <input type="hidden"
-						name="id" value="${produto.id}"><br>
+				<form class="conteudo-altera-form" action="${linkServletNovoProduto}" method="post">
+					<div class="div-input-nome">
+						Nome<br>
+						<input class="conteudo-altera-input-nome" type="text" name="nome" value="${produto.nome}" />
+					</div>
+					<div class="div-input-valor">
+						Valor<br>
+						<input class="conteudo-altera-input-valor" type="text" name="valor" value="${produto.valorUnitario}" />
+					</div>
+					<div class="div-input-quant">
+						Quantidade<br>
+						<input class="conteudo-altera-input-quant" type="text" name="quant" value="${produto.quantidade}" />
+					</div>
+					<input type="hidden" name="id" value="${produto.id}"><br>
 					<section class="conteudo-altera-section-input">
 						<input class="conteudo-altera-input" type="submit" value="alterar" /><br>
 					</section>
