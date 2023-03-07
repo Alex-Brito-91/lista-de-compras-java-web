@@ -35,12 +35,12 @@ public class SaldoServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adicionaSaldo(saldo);
 		
-		request.setAttribute("vale1", saldo.getAlimentação1());
-		request.setAttribute("vale2", saldo.getAlimentacao2());
-		request.setAttribute("dinheiro", saldo.getDinheiro());
+//		request.setAttribute("vale1", saldo.getAlimentação1());
+//		request.setAttribute("vale2", saldo.getAlimentacao2());
+//		request.setAttribute("dinheiro", saldo.getDinheiro());
 		request.setAttribute("total", totalFormatado);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("/formSaldoCriado.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/formNovoProduto.jsp");
 		rd.forward(request, response);
 		
 	}
