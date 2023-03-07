@@ -44,13 +44,12 @@ public class Banco {
 		
 	}
 	
-	public String totalCompra() {
-		BigDecimal totalDaCompra = new BigDecimal(0);
+	public BigDecimal totalCompra() {
+		BigDecimal totalDaCompra = BigDecimal.ZERO;
 		for (Produto produto : produtos) {
 			totalDaCompra = totalDaCompra.add(produto.getValorTotal());
 		}
-		String totalFormatado = DecimalFormat.getCurrencyInstance().format(totalDaCompra);
-		return totalFormatado;
+		return totalDaCompra;
 	}
 	
 	public void adicionaSaldo(Saldo saldo) {
@@ -61,13 +60,17 @@ public class Banco {
 		return Banco.saldo;
 	}
 	
-	public String saldoTotal() {
+	public BigDecimal saldoTotal() {
 		BigDecimal saldoTotal = BigDecimal.ZERO;
 		for (Saldo i : saldo) {
 			saldoTotal = saldoTotal.add(i.getAlimentação1().add(i.getAlimentacao2().add(i.getDinheiro())));
 		}
-		String totalFormatado = DecimalFormat.getCurrencyInstance().format(saldoTotal);
-		return totalFormatado;
+		return saldoTotal;
+	}
+	
+	public BigDecimal saldoRestante() {
+		BigDecimal restante = saldoTotal().subtract(totalCompra());
+		return restante;
 	}
 	
 }

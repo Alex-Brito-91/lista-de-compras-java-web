@@ -1,9 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page import="java.util.List, br.com.gerenciador.servlet.Saldo"%>
+<%@ page import="java.util.List, br.com.gerenciador.servlet.Saldo, br.com.gerenciador.servlet.Banco"%>
 <c:url value="/novoProduto" var="linkServletNovoProduto" />
-<c:url value="/saldo" var="linkServletNovoSaldo" />
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
@@ -27,9 +26,9 @@
 			<div class="conteudo-cadastro-div">
 				<div class="conteudo-compra-div">
 					<div class="conteudo-compra-texto">
-						<p>Saldo total: </p>
-						<p>Valor total da Compra: </p>
-						<p>Saldo restante: </p>
+						<p>Saldo total: <em>${saldo}</em> </p>
+						<p>Valor total da Compra: <em>${total}</em> </p>
+						<p>Saldo restante: <em>${restante}</em> </p>
 					</div>
 				</div>
 				<h1 class="conteudo-cadastro-tema">Produtos</h1>

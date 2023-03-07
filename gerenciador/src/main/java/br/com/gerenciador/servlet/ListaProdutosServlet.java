@@ -25,10 +25,12 @@ public class ListaProdutosServlet extends HttpServlet {
 		Banco banco = new Banco();
 		List<Produto> produtos = banco.getProdutos();
 		
+		String totalFormatado = DecimalFormat.getCurrencyInstance().format(banco.totalCompra());
+		
 		Date dataLista = new Date();
 		
 		request.setAttribute("produtos", produtos);
-		request.setAttribute("totalCompra", banco.totalCompra());
+		request.setAttribute("totalCompra", totalFormatado);
 		request.setAttribute("data", dataLista);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos.jsp");

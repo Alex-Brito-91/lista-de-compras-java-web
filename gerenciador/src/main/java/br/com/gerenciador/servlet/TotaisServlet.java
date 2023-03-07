@@ -1,9 +1,9 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.util.List;
+import java.text.DecimalFormat;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,18 +19,17 @@ public class TotaisServlet extends HttpServlet {
 		System.out.println("calculando totais de saldo e compra");
 		
 		Banco banco = new Banco();
-		List<Produto> produtos = banco.getProdutos();
-		List<Saldo> saldo = banco.getSaldo();
 		
-		BigDecimal totalCompra = new BigDecimal(banco.totalCompra());
-		BigDecimal totalSaldo = new BigDecimal(banco.saldoTotal());
-		BigDecimal saldoRestante = totalCompra.subtract(totalSaldo);
+		String totalF = DecimalFormat.getCurrencyInstance().format(banco.totalCompra());
+		String saldoF = DecimalFormat.getCurrencyInstance().format(banco.saldoTotal());
+		String restanteF = DecimalFormat.getCurrencyInstance().format(banco.saldoRestante());
 		
-		request.setAttribute("valorCompra", totalCompra);
-		request.setAttribute("valorSaldo", totalSaldo);
-		request.setAttribute("restante", saldoRestante);
+		request.setAttribute("total", totalF);
+		request.setAttribute("saldo", saldoF);
+		request.setAttribute("restante", restanteF);
 		
-		response.sendRedirect("formNovoProduto.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/formNovoProduto.jsp");
+		rd.forward(request, response);
 		
 	}
 

@@ -15,7 +15,7 @@
 		<a class="cabecalho-imagem-saldo" href="paginaInicial.jsp"> <img src="shopping-basket.png" alt="logo do carrinho"></a>
 		<nav class="cabecalho-menu-saldo">
 			<a class="cabecalho-menu-item-saldo" href="paginaInicial.jsp">Página Inicial</a> 
-			<a class="cabecalho-menu-item-saldo" href="formNovoProduto.jsp">Cadastro de Produtos</a> 
+			<a class="cabecalho-menu-item-saldo" href="totaisServlet">Cadastro de Produtos</a> 
 			<a class="cabecalho-menu-item-saldo" href="listaProdutos">Lista de Produtos</a>
 		</nav>
 	</header>
