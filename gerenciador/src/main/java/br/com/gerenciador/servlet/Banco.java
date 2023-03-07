@@ -9,7 +9,7 @@ import java.util.List;
 public class Banco {
 	
 	private static List<Produto> produtos = new ArrayList<>();
-	private static Saldo saldo = new Saldo();
+	private static List<Saldo> saldo = new ArrayList<>();
 	
 	private static Integer chaveSequencial = 1;
 	
@@ -53,9 +53,19 @@ public class Banco {
 		return totalFormatado;
 	}
 	
-	public String saldoTotal() {
-		BigDecimal saldoTotal = new BigDecimal(0);
-		saldoTotal = saldoTotal.add(saldo.getAlimentação1().add(saldo.getAlimentacao2().add(saldo.getDinheiro())));
+	public void adicionaSaldo(Saldo saldo) {
+		Banco.saldo.add(saldo);
+	}
+	
+	public List<Saldo> getSaldo() {
+		return Banco.saldo;
+	}
+	
+	public String saldoTotal(List<Saldo> saldos) {
+		BigDecimal saldoTotal = BigDecimal.ZERO;
+		for (Saldo saldo : saldos) {
+			saldoTotal = saldoTotal.add(saldo.getAlimentação1().add(saldo.getAlimentacao2().add(saldo.getDinheiro())));
+		}
 		String totalFormatado = DecimalFormat.getCurrencyInstance().format(saldoTotal);
 		return totalFormatado;
 	}
