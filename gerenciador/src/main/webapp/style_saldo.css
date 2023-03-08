@@ -59,8 +59,8 @@ body {
 	padding: 10px;
 	width: 400px;
 	height: 450px;
-	background-color: #7CFC92;
-	border: 1px solid #45B606;
+	background-color: #91F689;	
+	border: 1px solid #084D02;
 	border-radius: 20px;
 }
 
@@ -84,7 +84,7 @@ body {
 
 .conteudo-principal-input-alimentacao1 {
 	border-radius: 5px;
-	border: 1px solid #45B606;
+	border: 1px solid #084D02;
 	width: 80px;
 	height: 25px;
 	background-color: #FFFFFF;
@@ -98,7 +98,7 @@ body {
 
 .conteudo-principal-input-alimentacao2 {
 	border-radius: 5px;
-	border: 1px solid #45B606;
+	border: 1px solid #084D02;
 	width: 80px;
 	height: 25px;
 	background-color: #FFFFFF;
@@ -112,7 +112,7 @@ body {
 
 .conteudo-principal-input-dinheiro {
 	border-radius: 5px;
-	border: 1px solid #45B606;
+	border: 1px solid #084D02;
 	width: 80px;
 	height: 25px;
 	background-color: #FFFFFF;
@@ -132,7 +132,7 @@ body {
 	font-size: 19px;
 	border: none;
 	border-radius: 20px;
-	background-color: #45B606;
+	background-color: #0E7405;
 	width: 130px;
 	height: 40px;
 }
