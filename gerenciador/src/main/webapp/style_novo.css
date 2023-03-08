@@ -63,8 +63,8 @@ body {
 	padding: 20px;
 	width: 330px;
 	height: 130px;
-	background-color: #7CFC92;
-	border: 1px solid #45B606;
+	background-color: #91F689;	
+	border: 1px solid #084D02;
 	border-radius: 20px;
 	margin-bottom: 30px;
 }
@@ -80,7 +80,7 @@ body {
 	width: 370px;
 	height: 550px;
 	background-color: #7CFC92;
-	border: 1px solid #45B606;
+	border: 1px solid #084D02;
 	border-radius: 20px;
 }
 
@@ -102,7 +102,7 @@ body {
 
 .conteudo-cadastro-input-nome {
 	border-radius: 5px;
-	border: 1px solid #45B606;
+	border: 1px solid #084D02;
 	width: 150px;
 	height: 25px;
 	background-color: #FFFFFF;
@@ -118,7 +118,7 @@ body {
 	width: 80px;
 	height: 25px;
 	background-color: #FFFFFF;
-	border: 1px solid #45B606;
+	border: 1px solid #084D02;
 	color: #000000;
 }
 
@@ -131,7 +131,7 @@ body {
 	width: 50px;
 	height: 25px;
 	background-color: #FFFFFF;
-	border: 1px solid #45B606;
+	border: 1px solid #084D02;
 	color: #000000;
 }
 
@@ -147,7 +147,7 @@ body {
 	font-size: 19px;
 	border: none;
 	border-radius: 20px;
-	background-color: #45B606;
+	background-color: #0E7405;
 	width: 130px;
 	height: 40px;
 }
