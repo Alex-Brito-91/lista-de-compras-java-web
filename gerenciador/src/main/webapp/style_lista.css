@@ -59,8 +59,8 @@ body {
 	padding: 20px;
 	text-align: center;
 	border-radius: 30px;
-	border: 1px solid #45B606;
-	background-color: #7CFC92;
+	background-color: #91F689;	
+	border: 1px solid #084D02;
 }
 
 .conteudo-principal-tabela-tema {
@@ -145,7 +145,7 @@ h2 {
 	font-size: 19px;
 	border: none;
 	border-radius: 20px;
-	background-color: #45B606;
+	background-color: #0E7405;
 	width: 220px;
 	height: 40px;	
 }
