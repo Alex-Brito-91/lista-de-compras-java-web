@@ -27,11 +27,11 @@ body {
 	margin-bottom: 48px;
 	border-top: 0.4px solid #45B606;
 	padding: 30px;
+	text-align: center;
 }
 
 .conteudo-altera-section {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -40,8 +40,8 @@ body {
 	padding: 20px;
 	width: 370px;
 	height: 430px;
-	background-color: #7CFC92;
-	border: 1px solid #45B606;
+	background-color: #91F689;	
+	border: 1px solid #084D02;
 	border-radius: 20px;
 }
 
@@ -59,6 +59,7 @@ body {
 
 .div-input-nome {
 	margin: 30px;
+	text-align: left;
 }
 
 .conteudo-altera-input-nome {
@@ -72,6 +73,7 @@ body {
 
 .div-input-valor {
 	margin: 30px;
+	text-align: left;
 }
 
 .conteudo-altera-input-valor {
@@ -85,6 +87,7 @@ body {
 
 .div-input-quant {
 	margin: 30px;
+	text-align: left;
 }
 
 .conteudo-altera-input-quant {
@@ -96,20 +99,12 @@ body {
 	color: #000000;
 }
 
-.conteudo-altera-section-input {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-}
-
 .conteudo-altera-input {
-	align-items: center;
 	font-family: FreeMono, monospace;
 	font-size: 19px;
 	border: none;
 	border-radius: 20px;
-	background-color: #45B606;
+	background-color: #0E7405;
 	width: 130px;
 	height: 40px;
 }
