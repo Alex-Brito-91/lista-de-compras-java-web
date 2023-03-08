@@ -33,7 +33,12 @@
 						<input class="conteudo-altera-input-quant" type="text" name="quant" value="${produto.quantidade}" />
 					</div>
 					<input type="hidden" name="id" value="${produto.id}"><br>
-					<input class="conteudo-altera-input" type="submit" value="alterar" /><br>
+					<div class="conteudo-altera-botoes">
+						<a href="listaProdutos">
+							<input class="conteudo-altera-voltar" type="button" value="voltar" /><br>
+						</a>
+						<input class="conteudo-altera-input" type="submit" value="alterar" /><br>
+					</div>
 				</form>
 			</div>
 		</section>
