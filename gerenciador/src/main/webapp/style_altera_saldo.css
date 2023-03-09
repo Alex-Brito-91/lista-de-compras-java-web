@@ -16,15 +16,12 @@ body {
 }
 
 .cabecalho-saldo {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
 	padding: 20px;
 }
 
 .cabecalho-imagem-saldo {
 	height: 75px;
+	align-items: left;
 }
 
 .conteudo {
@@ -103,15 +100,15 @@ body {
 	color: #000000;
 }
 
-.section-botao-cadastrar {
-	padding: 30px;
+.conteudo-altera-botoes {
+	padding: 40px;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
+	margin-left: 8px;
 }
 
-.botao-cadastrar {
+.conteudo-altera-input {
 	font-family: FreeMono, monospace;
 	font-size: 19px;
 	border: none;
@@ -121,7 +118,21 @@ body {
 	height: 40px;
 }
 
-.botao-cadastrar:hover {
+.conteudo-altera-voltar {
+	font-family: FreeMono, monospace;
+	font-size: 19px;
+	border: none;
+	border-radius: 20px;
+	background-color: #0E7405;
+	width: 130px;
+	height: 40px;
+}
+
+.conteudo-altera-input:hover {
+	background-color: #15969D;
+}
+
+.conteudo-altera-voltar:hover {
 	background-color: #15969D;
 }
 
