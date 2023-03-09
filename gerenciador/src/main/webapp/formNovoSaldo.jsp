@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<c:url value="/saldo" var="linkServletSaldo" />
+<c:url value="/saldoServlet" var="linkServletSaldo" />
 
 <!DOCTYPE html>
 <html lang="pt-BR">
