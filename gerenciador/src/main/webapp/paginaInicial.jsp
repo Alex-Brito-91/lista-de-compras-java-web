@@ -13,7 +13,7 @@
 		<header class="cabecalho">
 			<img class="cabecalho-imagem"src="shopping-basket.png" alt="logo do carrinho">
 			<nav class="cabecalho-menu">
-				<a class="cabecalho-menu-item" href="formSaldo.jsp">Seu Saldo</a>
+				<a class="cabecalho-menu-item" href="formNovoSaldo.jsp">Seu Saldo</a>
 				<a class="cabecalho-menu-item" href="totaisServlet">Cadastro de Produtos</a>
 				<a class="cabecalho-menu-item" href="listaProdutos">Lista de Produtos</a>
 			</nav>
@@ -24,7 +24,7 @@
 				<div class="conteudo-principal-escrito">
 					<h1 class="conteudo-principal-escrito-titulo">Lista de Compras</h1>
 					<h2 class="conteudo-principal-escrito-subtitulo">Uma lista para cadastrar e calcular suas compras</h2>
-					<a href="formSaldo.jsp">
+					<a href="formNovoSaldo.jsp">
 						<button class="conteudo-principal-escrito-botao">Começar!</button>
 					</a>
 				</div>
