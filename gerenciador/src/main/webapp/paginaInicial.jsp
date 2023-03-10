@@ -11,7 +11,7 @@
 </head>
 	<body>
 		<header class="cabecalho">
-			<img class="cabecalho-imagem"src="shopping-basket.png" alt="logo do carrinho">
+			<img class="cabecalho-imagem"src="imagens/shopping-basket.png" alt="logo do carrinho">
 			<nav class="cabecalho-menu">
 				<a class="cabecalho-menu-item" href="formAlteraSaldo.jsp">Seu Saldo</a>
 				<a class="cabecalho-menu-item" href="totaisServlet">Cadastro de Produtos</a>
@@ -28,7 +28,7 @@
 						<button class="conteudo-principal-escrito-botao">Começar!</button>
 					</a>
 				</div>
-				<img class="conteudo-principal-imagem" alt="carrinho de compras" src="listbasket2.png">
+				<img class="conteudo-principal-imagem" alt="carrinho de compras" src="imagens/listbasket2.png">
 			</section>
 			<section class="conteudo-secundario">
 				<h3 class="conteudo-secundario-titulo">O que fazer com a lista?</h3>

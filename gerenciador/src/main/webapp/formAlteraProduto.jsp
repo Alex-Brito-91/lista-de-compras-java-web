@@ -14,7 +14,7 @@
 <body>
 	<header class="cabecalho">
 		<a class="cabecalho-imagem" href="paginaInicial.jsp"> <img
-			src="shopping-basket.png" alt="logo do carrinho"></a>
+			src="imagens/shopping-basket.png" alt="logo do carrinho"></a>
 	</header>
 	<main class="conteudo">
 		<section class="conteudo-altera-section">

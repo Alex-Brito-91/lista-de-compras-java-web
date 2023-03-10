@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header class="cabecalho-saldo">
-		<a class="cabecalho-imagem-saldo" href="paginaInicial.jsp"> <img src="shopping-basket.png" alt="logo do carrinho"></a>
+		<a class="cabecalho-imagem-saldo" href="paginaInicial.jsp"> <img src="imagens/shopping-basket.png" alt="logo do carrinho"></a>
 	</header>
 
 	<main class="conteudo">

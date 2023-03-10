@@ -14,7 +14,7 @@
 </head>
 <body>
 	<header class="cabecalho">
-		<a class="cabecalho-imagem" href="paginaInicial.jsp"> <img src="shopping-basket.png" alt="logo do carrinho"></a>
+		<a class="cabecalho-imagem" href="paginaInicial.jsp"> <img src="imagens/shopping-basket.png" alt="logo do carrinho"></a>
 		<nav class="cabecalho-menu">
 			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página Inicial</a> 
 			<a class="cabecalho-menu-item" href="totaisServlet">Cadastro de Produtos</a> 
