@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<c:url value="/saldoServlet" var="linkServletSaldo" />
+<c:url value="/novoSaldo" var="linkServletNovoSaldo" />
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -24,7 +24,7 @@
 		<section class="conteudo-principal">
 			<div class="conteudo-principal-div">
 				<h1 class="conteudo-principal-tema">Saldo para Compras</h1>
-				<form class="conteudo-principal-form"action="${linkServletSaldo}" method="post">
+				<form class="conteudo-principal-form"action="${linkServletNovoSaldo}" method="post">
 					<div class="div-input-alimentacao1">
 						<br> Vale Alimentação 1: <input class="conteudo-principal-input-alimentacao1" type="text" name="vale1" /><br />
 					</div>
