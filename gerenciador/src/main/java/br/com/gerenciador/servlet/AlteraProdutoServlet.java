@@ -26,8 +26,8 @@ public class AlteraProdutoServlet extends HttpServlet {
 		Integer id = Integer.valueOf(paramId);
 		
 		Banco banco = new Banco();
-		Produto produto = banco.buscaIdProduto(id);
 		
+		Produto produto = banco.buscaIdProduto(id);
 		produto.setNome(nome);
 		produto.setValorUnitario(valorUnitario);
 		produto.setQuantidade(quantidade);
