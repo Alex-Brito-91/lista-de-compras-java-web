@@ -7,7 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cadastro de Produto</title>
+	<title>Alterar Produto</title>
 	<link rel="stylesheet" type="text/css" href="style_altera_produto.css">
 </head>
 
