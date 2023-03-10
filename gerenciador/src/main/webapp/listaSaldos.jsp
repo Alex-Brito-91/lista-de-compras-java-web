@@ -57,6 +57,9 @@
 				</h3>
 				<section class="section-botao-voltar">
 					<button class="botao-voltar" onclick="history.back()">voltar</button><br>
+					<a href="totaisServlet">
+						<input class="botao-cadastro" type="button" value="cadastrar produtos" /><br>
+					</a>
 				</section>
 			</div>
 		</section>

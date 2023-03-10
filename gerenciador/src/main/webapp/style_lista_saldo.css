@@ -154,6 +154,20 @@ h2 {
 	background-color: #15969D;
 }
 
+.botao-cadastro {
+	font-family: FreeMono, monospace;
+	font-size: 19px;
+	border: none;
+	border-radius: 20px;
+	background-color: #0E7405;
+	width: 220px;
+	height: 40px;	
+}
+
+.botao-cadastro:hover {
+	background-color: #15969D;
+}
+
 .rodape {
 	padding: 32px;
 	border-top: 0.4px solid #45B606;
