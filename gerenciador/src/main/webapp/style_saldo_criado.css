@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed&family=Sofia+Sans+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@200;400&family=Sofia+Sans+Semi+Condensed&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	font-size: 100%;
+	background-color: #dcfecc;
+}
+
+.cabecalho {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.cabecalho-imagem {
+	height: 75px;
+}
+
+.cabecalho-menu {
+	display: flex;
+	gap: 32px;
+}
+
+.cabecalho-menu-item {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	color: #000000;
+}
+
+.cabecalho-menu-item:hover {
+	color: #45B606;
+}
+
+.conteudo {
+	margin-bottom: 48px;
+	border-top: 0.4px solid #45B606;
+	padding: 30px;
+}
+
+.conteudo-principal-tabela {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.conteudo-principal-tabela-div {
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	border-radius: 30px;
+	background-color: #91F689;	
+	border: 1px solid #084D02;
+}
+
+.conteudo-principal-tabela-tema {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	padding: 20px;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	padding: 20px;
+	text-align: center;
+}
+
+.tabela {
+	width: 600px;
+	padding: 10px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid #B89600;
+}
+
+.cabecalho-tabela {
+	text-align: center;
+	width: 80px;
+	font-weight: bold;
+	font-family: Courier, monospace;
+}
+
+.itens-conteudo-tabela:hover {
+	background-color: #FFFF00;
+}
+
+.conteudo-tabela {
+	text-align: center;
+	font-family: FreeMono, monospace;
+}
+
+.botao-alterar {
+	font-family: FreeMono, monospace;
+	font-size: 15px;
+	color: #000000;
+}
+
+.botao-alterar:hover {
+	color: #01A9DB;
+}
+
+.botao-excluir {
+	font-family: FreeMono, monospace;
+	font-size: 15px;
+	color: #000000;
+}
+
+.botao-excluir:hover {
+	color: #FF0000;
+}
+
+.conteudo-principal-tabela-total {
+	font-family: FreeMono, monospace;
+	font-weight: 500;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.section-botao-voltar {
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.botao-voltar {
+	font-family: FreeMono, monospace;
+	font-size: 19px;
+	border: none;
+	border-radius: 20px;
+	background-color: #0E7405;
+	width: 220px;
+	height: 40px;	
+}
+
+.botao-voltar:hover {
+	background-color: #15969D;
+}
+
+.rodape {
+	padding: 32px;
+	border-top: 0.4px solid #45B606;
+}
+
+
+
+
