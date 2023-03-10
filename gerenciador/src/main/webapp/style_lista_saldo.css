@@ -65,16 +65,8 @@ body {
 
 .conteudo-principal-tabela-tema {
 	font-family: 'Sofia Sans Extra Condensed', sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 40px;
-	padding: 20px;
-	text-align: center;
-}
-
-h2 {
-	font-family: 'Sofia Sans Extra Condensed', sans-serif;
-	font-weight: 500;
-	font-size: 30px;
 	padding: 20px;
 	text-align: center;
 }
@@ -92,7 +84,8 @@ h2 {
 	text-align: center;
 	width: 80px;
 	font-weight: bold;
-	font-family: Courier, monospace;
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-size: 25px;
 }
 
 .itens-conteudo-tabela:hover {
@@ -101,12 +94,13 @@ h2 {
 
 .conteudo-tabela {
 	text-align: center;
-	font-family: FreeMono, monospace;
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-size: 25px;
 }
 
 .botao-alterar {
-	font-family: FreeMono, monospace;
-	font-size: 15px;
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-size: 25px;
 	color: #000000;
 }
 
@@ -115,8 +109,8 @@ h2 {
 }
 
 .botao-excluir {
-	font-family: FreeMono, monospace;
-	font-size: 15px;
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
+	font-size: 25px;
 	color: #000000;
 }
 
@@ -125,9 +119,9 @@ h2 {
 }
 
 .conteudo-principal-tabela-total {
-	font-family: FreeMono, monospace;
+	font-family: 'Sofia Sans Extra Condensed', sans-serif;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 30px;
 	padding: 20px;
 	text-align: center;
 }

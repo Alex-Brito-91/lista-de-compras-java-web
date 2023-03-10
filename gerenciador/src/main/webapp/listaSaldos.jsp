@@ -29,9 +29,9 @@
 				<table class="tabela">
 					<thead>
 						<tr class="itens-cabecalho-tabela">
-							<th class="cabecalho-tabela">SALDO ALIMENTAÇÃO 1</th>
-							<th class="cabecalho-tabela">SALDO ALIMENTAÇÃO 2</th>
-							<th class="cabecalho-tabela">SALDO DINHEIRO</th>
+							<th class="cabecalho-tabela">ALIMENTAÇÃO 1</th>
+							<th class="cabecalho-tabela">ALIMENTAÇÃO 2</th>
+							<th class="cabecalho-tabela">DINHEIRO</th>
 							<th class="cabecalho-tabela">&nbsp;</th>
 							<th class="cabecalho-tabela">&nbsp;</th>
 						</tr>
@@ -52,9 +52,9 @@
 						</c:forEach>
 					</tbody>
 				</table>
-				<h3 class="conteudo-principal-tabela-total">
-					Saldo Total: <em>${saldoTotal}</em><br>
-				</h3>
+				<h2 class="conteudo-principal-tabela-total">
+					Saldo Total: <b><em>${saldoTotal}</em></b><br>
+				</h2>
 				<section class="section-botao-voltar">
 					<button class="botao-voltar" onclick="history.back()">voltar</button><br>
 					<a href="totaisServlet">
