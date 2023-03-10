@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Saldo</title>
-	<link rel="stylesheet" type="text/css" href="style_saldo_lista.css">
+	<link rel="stylesheet" type="text/css" href="style_lista_saldo.css">
 </head>
 <body>
 	<header class="cabecalho">
