@@ -17,7 +17,7 @@
 		<a class="cabecalho-imagem" href="paginaInicial.jsp"> <img src="shopping-basket.png" alt="logo do carrinho"></a>
 		<nav class="cabecalho-menu">
 			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página Inicial</a> 
-			<a class="cabecalho-menu-item" href="formNovoSaldo.jsp">Seu Saldo</a>
+			<a class="cabecalho-menu-item" href="formAlteraSaldo.jsp">Seu Saldo</a>
 			<a class="cabecalho-menu-item" href="totaisServlet">Cadastro de Produtos</a> 
 		</nav>
 	</header>
@@ -57,15 +57,8 @@
 						</c:forEach>
 					</tbody>
 				</table>
-				<h3 class="conteudo-principal-tabela-total">
-					Total da compra: <em>${totalCompra}</em><br>
-					Saldo Total: <em>${saldoTotal}</em><br>
-					Saldo Restante: <em>${totalRestante}</em>
-				</h3>
 				<section class="section-botao-voltar">
-					<a href="totaisServlet">
-						<button class="botao-voltar">voltar ao cadastro</button>
-					</a>
+					<button class="botao-voltar" onclick="history.back()">voltar ao cadastro</button><br>
 				</section>
 			</div>
 		</section>
