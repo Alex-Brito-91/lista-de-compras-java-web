@@ -7,7 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Saldo</title>
+	<title>Alterar Saldo</title>
 	<link rel="stylesheet" type="text/css" href="style_altera_saldo.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
 	<main class="conteudo">
 		<section class="conteudo-principal">
 			<div class="conteudo-principal-div">
-				<h1 class="conteudo-principal-tema">Saldo para Compras</h1>
+				<h1 class="conteudo-principal-tema">Alterar Saldo</h1>
 				<form class="conteudo-principal-form"action="${linkServletSaldo}" method="post">
 					<div class="div-input-alimentacao1">
 						<br> Vale Alimentação 1: <input class="conteudo-principal-input-alimentacao1" type="text" name="vale1" value="${saldo.alimentacao1}" /><br />

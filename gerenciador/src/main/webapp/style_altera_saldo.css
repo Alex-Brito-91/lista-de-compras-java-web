@@ -40,8 +40,8 @@ body {
 	padding: 10px;
 	width: 400px;
 	height: 450px;
-	background-color: #91F689;	
-	border: 1px solid #084D02;
+	background-color: #FFFA8C;	
+	border: 1px solid #DBC700;
 	border-radius: 20px;
 }
 
@@ -113,7 +113,7 @@ body {
 	font-size: 19px;
 	border: none;
 	border-radius: 20px;
-	background-color: #0E7405;
+	background-color: #45B606;
 	width: 130px;
 	height: 40px;
 }
@@ -123,7 +123,7 @@ body {
 	font-size: 19px;
 	border: none;
 	border-radius: 20px;
-	background-color: #0E7405;
+	background-color: #45B606;
 	width: 130px;
 	height: 40px;
 }
