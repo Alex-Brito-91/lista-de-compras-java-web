@@ -11,6 +11,7 @@ public class Banco {
 	private static List<Saldo> saldo = new ArrayList<>();
 	
 	private static Integer chaveSequencial = 1;
+	private static Integer chaveSaldo = 1;
 	
 	public void adiciona(Produto produto) {
 		produto.setId(Banco.chaveSequencial++);
@@ -52,6 +53,7 @@ public class Banco {
 	}
 	
 	public void adicionaSaldo(Saldo saldo) {
+		saldo.setId(Banco.chaveSaldo++);
 		Banco.saldo.add(saldo);
 	}
 	
@@ -59,10 +61,32 @@ public class Banco {
 		return Banco.saldo;
 	}
 	
+	public void removeSaldo(Integer id) {
+		
+		Iterator<Saldo> it = saldo.iterator();
+		
+		while (it.hasNext()) {
+			Saldo p = it.next();
+			
+			if (p.getId() == id) {
+				it.remove();
+			}
+		}
+	}
+
+	public Saldo buscaIdSaldo(Integer id) {
+		for (Saldo saldo : saldo) {
+			if(saldo.getId() == id) {
+				return saldo;
+			}
+		} return null;
+		
+	}
+	
 	public BigDecimal saldoTotal() {
 		BigDecimal saldoTotal = BigDecimal.ZERO;
 		for (Saldo i : saldo) {
-			saldoTotal = saldoTotal.add(i.getAlimentação1().add(i.getAlimentacao2().add(i.getDinheiro())));
+			saldoTotal = saldoTotal.add(i.getAlimentacao1().add(i.getAlimentacao2().add(i.getDinheiro())));
 		}
 		return saldoTotal;
 	}

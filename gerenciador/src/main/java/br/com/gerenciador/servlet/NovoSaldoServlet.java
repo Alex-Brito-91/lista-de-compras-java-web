@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/saldoServlet")
-public class SaldoServlet extends HttpServlet {
+@WebServlet("/novoSaldo")
+public class NovoSaldoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -25,14 +25,14 @@ public class SaldoServlet extends HttpServlet {
 		BigDecimal dinheiro = new BigDecimal(request.getParameter("dinheiro").replaceAll(",", "."));
 		
 		Saldo saldo = new Saldo();
-		saldo.setAlimentação1(valeAlimentacao1);
+		saldo.setAlimentacao1(valeAlimentacao1);
 		saldo.setAlimentacao2(valeAlimentacao2);
 		saldo.setDinheiro(dinheiro);
 		
 		Banco banco = new Banco();
 		banco.adicionaSaldo(saldo);
 		
-		response.sendRedirect("totaisServlet");
+		response.sendRedirect("listaSaldo");
 		
 	}
 	

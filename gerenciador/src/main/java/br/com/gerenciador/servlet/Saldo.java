@@ -4,16 +4,25 @@ import java.math.BigDecimal;
 
 public class Saldo {
 
-	private BigDecimal alimentação1;
+	private Integer id;
+	private BigDecimal alimentacao1;
 	private BigDecimal alimentacao2;
 	private BigDecimal dinheiro;
 
-	public BigDecimal getAlimentação1() {
-		return alimentação1;
+	public Integer getId() {
+		return id;
+	}
+	
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+	public BigDecimal getAlimentacao1() {
+		return alimentacao1;
 	}
 
-	public void setAlimentação1(BigDecimal alimentação1) {
-		this.alimentação1 = alimentação1;
+	public void setAlimentacao1(BigDecimal alimentacao1) {
+		this.alimentacao1 = alimentacao1;
 	}
 
 	public BigDecimal getAlimentacao2() {

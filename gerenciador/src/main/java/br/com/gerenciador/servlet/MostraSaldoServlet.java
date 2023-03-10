@@ -1,14 +1,16 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/removeProduto")
-public class RemoveProdutoServlet extends HttpServlet {
+@WebServlet("/mostraSaldo")
+public class MostraSaldoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -17,9 +19,11 @@ public class RemoveProdutoServlet extends HttpServlet {
 		Integer id = Integer.valueOf(paramId);
 		
 		Banco banco = new Banco();
-		banco.removeProduto(id);
+		Saldo saldo = banco.buscaIdSaldo(id);
 		
-		response.sendRedirect("listaProdutos");
+		request.setAttribute("saldo", saldo);
+		RequestDispatcher rd = request.getRequestDispatcher("/formAlteraSaldo.jsp");
+		rd.forward(request, response);
 		
 	}
 
