@@ -44,6 +44,10 @@ public class Banco {
 		
 	}
 	
+	public void limparLista() {
+		produtos.clear();
+	}
+	
 	public BigDecimal totalCompra() {
 		BigDecimal totalDaCompra = BigDecimal.ZERO;
 		for (Produto produto : produtos) {
