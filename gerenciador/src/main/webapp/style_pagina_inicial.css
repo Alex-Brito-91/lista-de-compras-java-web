@@ -11,7 +11,7 @@
 
 body {
 	font-size: 100%;
-	background-color: #7CFC92;
+	background-color: #AED6F1;
 }
 
 .cabecalho {
@@ -44,7 +44,7 @@ body {
 
 .conteudo {
 	margin-bottom: 48px;
-	border-top: 0.4px solid #45B606; 
+	border-top: 0.4px solid #45B606;
 }
 
 .conteudo-principal {
