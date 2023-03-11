@@ -134,20 +134,6 @@ body {
 	justify-content: space-around;
 }
 
-.botao-voltar {
-	font-family: FreeMono, monospace;
-	font-size: 19px;
-	border: none;
-	border-radius: 20px;
-	background-color: #0E7405;
-	width: 90px;
-	height: 40px;	
-}
-
-.botao-voltar:hover {
-	background-color: #15969D;
-}
-
 .botao-cadastro {
 	font-family: FreeMono, monospace;
 	font-size: 19px;
@@ -168,7 +154,7 @@ body {
 	border: none;
 	border-radius: 20px;
 	background-color: #0E7405;
-	width: 170px;
+	width: 220px;
 	height: 40px;	
 }
 

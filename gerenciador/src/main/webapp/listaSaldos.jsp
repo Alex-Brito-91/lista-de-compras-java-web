@@ -56,7 +56,6 @@
 					Saldo Total: <b><em>${saldoTotal}</em></b><br>
 				</h2>
 				<section class="section-botao-voltar">
-					<button class="botao-voltar" onclick="history.back()">voltar</button><br>
 					<a href="paginaCadastroTotais">
 						<input class="botao-cadastro" type="button" value="cadastrar produtos" /><br>
 					</a>
