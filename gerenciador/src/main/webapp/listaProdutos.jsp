@@ -18,7 +18,7 @@
 		<nav class="cabecalho-menu">
 			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página Inicial</a> 
 			<a class="cabecalho-menu-item" href="listaSaldo">Seu Saldo</a>
-			<a class="cabecalho-menu-item" href="totaisServlet">Cadastro de Produtos</a>
+			<a class="cabecalho-menu-item" href="paginaCadastroTotais">Cadastro de Produtos</a>
 			<a href="limpaLista">
 				<input class="botao-limpar-lista" type="button" value="Limpar Lista"/>
 			</a>
@@ -66,7 +66,9 @@
 					Saldo Restante: <em>${totalRestante}</em>
 				</h3>
 				<section class="section-botoes">
-					<button class="botao-voltar" onclick="history.back()">voltar ao cadastro</button><br>
+					<a href="paginaCadastroTotais">
+						<input class="botao-voltar" type="button" value="voltar ao cadastro"/>
+					</a>
 				</section>
 			</div>
 		</section>

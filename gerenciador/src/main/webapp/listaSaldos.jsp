@@ -17,7 +17,7 @@
 		<a class="cabecalho-imagem" href="paginaInicial.jsp"> <img src="imagens/shopping-basket.png" alt="logo do carrinho"></a>
 		<nav class="cabecalho-menu">
 			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página Inicial</a> 
-			<a class="cabecalho-menu-item" href="totaisServlet">Cadastro de Produtos</a> 
+			<a class="cabecalho-menu-item" href="paginaCadastroTotais">Cadastro de Produtos</a> 
 			<a class="cabecalho-menu-item" href="listaProdutos">Lista de Produtos</a>
 		</nav>
 	</header>
@@ -57,7 +57,7 @@
 				</h2>
 				<section class="section-botao-voltar">
 					<button class="botao-voltar" onclick="history.back()">voltar</button><br>
-					<a href="totaisServlet">
+					<a href="paginaCadastroTotais">
 						<input class="botao-cadastro" type="button" value="cadastrar produtos" /><br>
 					</a>
 				</section>
