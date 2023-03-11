@@ -18,7 +18,10 @@
 		<nav class="cabecalho-menu">
 			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página Inicial</a> 
 			<a class="cabecalho-menu-item" href="listaSaldo">Seu Saldo</a>
-			<a class="cabecalho-menu-item" href="totaisServlet">Cadastro de Produtos</a> 
+			<a class="cabecalho-menu-item" href="totaisServlet">Cadastro de Produtos</a>
+			<a href="limpaLista">
+				<input class="botao-limpar-lista" type="button" value="Limpar Lista"/>
+			</a>
 		</nav>
 	</header>
 	
@@ -26,7 +29,7 @@
 		<section class="conteudo-principal-tabela">
 			<div class="conteudo-principal-tabela-div">
 				<h1 class="conteudo-principal-tabela-tema">LISTA DE PRODUTOS</h1>
-				<h2> Lista Criada em: 
+				<h2 > Lista Criada em: 
 					<em><fmt:formatDate value="${data}" pattern="dd/MM/yyyy"/></em>
 				</h2>
 				<table class="tabela">
@@ -62,7 +65,7 @@
 					Saldo Total: <em>${saldoTotal}</em><br>
 					Saldo Restante: <em>${totalRestante}</em>
 				</h3>
-				<section class="section-botao-voltar">
+				<section class="section-botoes">
 					<button class="botao-voltar" onclick="history.back()">voltar ao cadastro</button><br>
 				</section>
 			</div>
