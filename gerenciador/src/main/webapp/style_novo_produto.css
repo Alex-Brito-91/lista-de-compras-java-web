@@ -156,6 +156,20 @@ body {
 	background-color: #15969D;
 }
 
+.botao-input-lista {
+	font-family: FreeMono, monospace;
+	font-size: 19px;
+	border: none;
+	border-radius: 20px;
+	background-color: #0E7405;
+	width: 130px;
+	height: 40px;
+}
+
+.botao-input-lista:hover {
+	background-color: #15969D;
+}
+
 .rodape {
 	padding: 32px;
 	border-top: 0.4px solid #45B606;
