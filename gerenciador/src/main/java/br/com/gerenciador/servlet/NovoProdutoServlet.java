@@ -36,7 +36,7 @@ public class NovoProdutoServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adiciona(produto);
 		
-		response.sendRedirect("listaProdutos");
+		response.sendRedirect("totaisServlet");
 		
 	}
 
