@@ -25,7 +25,7 @@
 	<main class="conteudo">
 		<section class="conteudo-principal-tabela">
 			<div class="conteudo-principal-tabela-div">
-				<h1 class="conteudo-principal-tabela-tema">SALDO</h1>
+				<h1 class="conteudo-principal-tabela-tema">SEU SALDO</h1>
 				<table class="tabela">
 					<thead>
 						<tr class="itens-cabecalho-tabela">
@@ -59,6 +59,9 @@
 					<button class="botao-voltar" onclick="history.back()">voltar</button><br>
 					<a href="paginaCadastroTotais">
 						<input class="botao-cadastro" type="button" value="cadastrar produtos" /><br>
+					</a>
+					<a href="formNovoSaldo.jsp">
+						<input class="botao-cadastro-saldo" type="button" value="inserir saldo" /><br>
 					</a>
 				</section>
 			</div>

@@ -140,7 +140,7 @@ body {
 	border: none;
 	border-radius: 20px;
 	background-color: #0E7405;
-	width: 220px;
+	width: 90px;
 	height: 40px;	
 }
 
@@ -159,6 +159,20 @@ body {
 }
 
 .botao-cadastro:hover {
+	background-color: #15969D;
+}
+
+.botao-cadastro-saldo {
+	font-family: FreeMono, monospace;
+	font-size: 19px;
+	border: none;
+	border-radius: 20px;
+	background-color: #0E7405;
+	width: 170px;
+	height: 40px;	
+}
+
+.botao-cadastro-saldo:hover {
 	background-color: #15969D;
 }
 

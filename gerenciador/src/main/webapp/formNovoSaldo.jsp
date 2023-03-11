@@ -23,16 +23,16 @@
 	<main class="conteudo">
 		<section class="conteudo-principal">
 			<div class="conteudo-principal-div">
-				<h1 class="conteudo-principal-tema">Saldo para Compras</h1>
+				<h1 class="conteudo-principal-tema">Insira seu Saldo:</h1>
 				<form class="conteudo-principal-form"action="${linkServletNovoSaldo}" method="post">
 					<div class="div-input-alimentacao1">
-						<br> Vale Alimentação 1: <input class="conteudo-principal-input-alimentacao1" type="text" name="vale1" /><br />
+						<br> Vale Alimentação 1: <input class="conteudo-principal-input-alimentacao1" type="text" name="vale1" value="0"/><br />
 					</div>
 					<div class="div-input-alimentacao2">
-						<br>Vale Alimentação 2: <input class="conteudo-principal-input-alimentacao2" type="text" name="vale2" /><br />
+						<br>Vale Alimentação 2: <input class="conteudo-principal-input-alimentacao2" type="text" name="vale2" value="0"/><br />
 					</div>
 					<div class="div-input-dinheiro">
-						<br>Dinheiro: <input class="conteudo-principal-input-dinheiro" type="text" name="dinheiro" /><br />
+						<br>Dinheiro: <input class="conteudo-principal-input-dinheiro" type="text" name="dinheiro" value="0"/><br />
 					</div>
 					<section class="section-botao-cadastrar">
 						<input class="botao-cadastrar" type="submit" value="cadastrar" />

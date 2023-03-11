@@ -19,7 +19,7 @@ public class RemoveSaldoServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.removeSaldo(id);
 		
-		response.sendRedirect("listaProdutos");
+		response.sendRedirect("listaSaldo");
 		
 	}
 

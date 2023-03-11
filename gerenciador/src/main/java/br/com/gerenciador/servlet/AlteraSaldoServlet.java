@@ -31,7 +31,7 @@ public class AlteraSaldoServlet extends HttpServlet {
 		saldo.setAlimentacao2(valeAlimentacao2);
 		saldo.setDinheiro(dinheiro);
 		
-		response.sendRedirect("totaisServlet");
+		response.sendRedirect("listaSaldo");
 		
 	}
 
