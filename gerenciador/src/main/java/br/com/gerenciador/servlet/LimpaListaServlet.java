@@ -13,6 +13,8 @@ public class LimpaListaServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("limpando lista de produtos");
+		
 		Banco banco = new Banco();
 		banco.limparLista();
 		
