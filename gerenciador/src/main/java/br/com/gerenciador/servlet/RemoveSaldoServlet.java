@@ -13,6 +13,8 @@ public class RemoveSaldoServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("removendo saldo");
+		
 		String paramId = request.getParameter("id");
 		Integer id = Integer.valueOf(paramId);
 		
