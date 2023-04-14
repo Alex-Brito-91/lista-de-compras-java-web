@@ -1,8 +1,7 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
-import java.text.DecimalFormat;
-
+import java.math.BigDecimal;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,13 +17,13 @@ public class TotaisServlet extends HttpServlet {
 		
 		Banco banco = new Banco();
 		
-		String totalF = DecimalFormat.getCurrencyInstance().format(banco.totalCompra());
-		String saldoF = DecimalFormat.getCurrencyInstance().format(banco.saldoTotal());
-		String restanteF = DecimalFormat.getCurrencyInstance().format(banco.saldoRestante());
+		BigDecimal saldo = (banco.saldoTotal());
+		BigDecimal total = (banco.totalCompra());
+		BigDecimal restante = (banco.saldoRestante());
 		
-		request.setAttribute("total", totalF);
-		request.setAttribute("saldo", saldoF);
-		request.setAttribute("restante", restanteF);
+		request.setAttribute("saldo", saldo);
+		request.setAttribute("total", total);
+		request.setAttribute("restante", restante);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/formNovoProduto.jsp");
 		rd.forward(request, response);
