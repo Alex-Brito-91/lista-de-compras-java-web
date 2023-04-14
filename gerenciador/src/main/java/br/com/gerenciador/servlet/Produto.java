@@ -1,7 +1,6 @@
 package br.com.gerenciador.servlet;
 
 import java.math.BigDecimal;
-import java.text.DecimalFormat;
 
 public class Produto {
 
@@ -51,14 +50,4 @@ public class Produto {
 		this.valorTotal = valor;
 	}
 	
-	public String getValorUnString() {
-		String valorUn = DecimalFormat.getCurrencyInstance().format(this.valorUnitario);
-		return valorUn;
-	}
-	
-	public String getValorTotalString() {
-		String valorTotalString = DecimalFormat.getCurrencyInstance().format(this.valorTotal);
-		return valorTotalString;
-	}
-
 }
