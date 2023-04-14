@@ -1,7 +1,6 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,7 +21,7 @@ public class MostraProdutoServlet extends HttpServlet {
 		
 		Produto produto = banco.buscaIdProduto(id);
 		
-		System.out.println(produto.getNome());
+		System.out.println("mostrando produto " + produto.getNome());
 		
 		request.setAttribute("produto", produto);
 		RequestDispatcher rd = request.getRequestDispatcher("/formAlteraProduto.jsp");
