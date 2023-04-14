@@ -1,7 +1,6 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,6 +19,8 @@ public class MostraSaldoServlet extends HttpServlet {
 		
 		Banco banco = new Banco();
 		Saldo saldo = banco.buscaIdSaldo(id);
+		
+		System.out.println("mostrando saldo");
 		
 		request.setAttribute("saldo", saldo);
 		RequestDispatcher rd = request.getRequestDispatcher("/formAlteraSaldo.jsp");
