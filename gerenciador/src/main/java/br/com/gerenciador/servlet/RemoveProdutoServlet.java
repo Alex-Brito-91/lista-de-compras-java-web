@@ -13,10 +13,10 @@ public class RemoveProdutoServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		System.out.println("limpando lista de compras");
-		
 		String paramId = request.getParameter("id");
 		Integer id = Integer.valueOf(paramId);
+		
+		System.out.println("removendo produto " + paramId);
 		
 		Banco banco = new Banco();
 		banco.removeProduto(id);
